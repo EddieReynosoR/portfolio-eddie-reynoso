@@ -48,11 +48,17 @@
     font-family: 'Poppins', sans-serif;
     text-wrap: pretty;
 }
+.home-Back{
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.home-Back a{
+    color: #000;
+}
 
 .div1 { 
-    grid-area: 1 / 1 / 6 / 3;
+    grid-area: 2 / 1 / 6 / 3;
     display: flex;
-    align-items: center;
     justify-content: center;
  }
 .div2 { 

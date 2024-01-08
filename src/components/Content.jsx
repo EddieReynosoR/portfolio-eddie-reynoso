@@ -1,38 +1,52 @@
-import './Content.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import styles from './Content.module.css'
+import { Certification } from './Certification';
 
 export const Content = () => {
-    return(
-        <section className="AboutMe-Container">
-            <div className='div1'>
-                <picture>
-                    <img src="./default.jpg" alt="Imagen" className='fotoPerfil'/>
-                </picture>
-            </div>
-            <div className='div2'>
-                <header>
-                    <h3>About Me</h3>
-                    <h1>Eduardo Reynoso</h1>
-                </header>
-                <section className='AboutMe-Text'>
-                    <p>
-                        Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti. Fusce quis suscipit erat, quis sodales eros. Vestibulum ac mi sem. Donec a nulla eu lorem dignissim tincidunt nec eu augue. Etiam consequat aliquam turpis ac varius.Vivamus malesuada vel ex sit amet ultricies.
-                    </p>
-                    <p>
-                        Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti. Fusce quis suscipit erat, quis sodales eros. Vestibulum ac mi sem. Donec a nulla eu lorem dignissim tincidunt nec eu augue. Etiam consequat aliquam turpis ac varius.Vivamus malesuada vel ex sit amet ultricies.
-                    </p>
-                    <p>
-                        Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti. Fusce quis suscipit erat, quis sodales eros. Vestibulum ac mi sem. Donec a nulla eu lorem dignissim tincidunt nec eu augue. Etiam consequat aliquam turpis ac varius.Vivamus malesuada vel ex sit amet ultricies.
-                    </p>
-                </section>
-            </div>
-            <div className='div3'>
-                <section>
-                    <ul className='social-Icons'>
-                        <li><a href="https://github.com/EddieReynosoR" target='_blank' title='Github'><img src="./github.svg" alt="" /></a></li>
-                        <li><a href="https://www.linkedin.com/in/eduardo-reynoso-rosales-8a9590280/" target='_blank' title='Linkedin'><img src="./linkedin.svg" alt="" /></a></li>
-                    </ul>
-                </section>
+    return (
+        <section className={styles['Projects-Container']} id='projects'>
+            <div className={styles['second-Container']}>
+                <div className={styles['third-Container']}>
+                    <header className={styles['header']}>
+                        <div className={styles['headerContent']}>
+                            <div className={styles['headerContent']}>
+                                <h1 className={styles['headerContent-h1']}>My Experience & Skills</h1>
+                                <p className={styles['headerContent-p']}>Check the projects that I’ve made, and with which technologies were created.</p>
+                                <nav className={styles['headerContent-nav']}>
+                                    <ul className={styles['headerContent-navContent']}>
+                                    <li>
+                                            <a href="" className={styles['headerContent-navContent-a']}>
+                                                <div className={styles['li-line']}></div>
+                                                <span style={{marginLeft:'0.5rem'}}>Experience</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" className={styles['headerContent-navContent-a']}>
+                                                <div className={styles['li-line']}></div>
+                                                <span style={{marginLeft:'0.5rem'}}>Certifications</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" className={styles['headerContent-navContent-a']}>
+                                                <div className={styles['li-line']}></div>
+                                                <span style={{marginLeft:'0.5rem'}}>Projects</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" className={styles['headerContent-navContent-a']}>
+                                                <div className={styles['li-line']}></div>
+                                                <span style={{marginLeft:'0.5rem'}}>Skills</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </header>
+                    <div className={styles['projectsContent']}>
+                        <h1>Certification</h1>
+                        <Certification/>
+                    </div>
+                </div>
             </div>
         </section>
     )
