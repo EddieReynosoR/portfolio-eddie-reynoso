@@ -1,0 +1,20 @@
+.navBar { 
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 90px;
+}
+
+.navBarP {
+    padding: 20px 33px 0 33px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navBarPAnchor{
+    text-decoration: none;
+    color: white;
+}
+

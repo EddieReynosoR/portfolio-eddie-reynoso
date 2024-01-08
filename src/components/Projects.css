@@ -1,0 +1,25 @@
+.Projects-Container{
+    min-height: 92.41192411924119vh;
+    --l_display: unset;
+    height: auto;
+    min-width: 0px;
+    max-width: 99999px;
+    max-height: 99999px;
+    align-self: stretch;
+    justify-content: stretch;
+    position:relative;
+
+    background: #8f8f8f;
+
+    top: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+
+    --top: 0%;
+    --is-sticky: 1;
+    --sticky-offset: 0px;
+}

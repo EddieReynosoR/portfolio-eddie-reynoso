@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.homeContainer {
+    width: 100%;
+    height: 100%;
+    top: 125px;
+    left: 0px;
+    position: sticky;
+}
+
+.homeContainer .homeTitle{
+    margin-left: 89px;
+    width: 705px;
+}
+
+.h1Full, .h1Developer{
+    font-family: 'Oswald', sans-serif;
+    font-size: 106px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 9.6px;
+}
+
+.homeContainer .homeTitle p{
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    line-height: 30px;
+}
+
+.h1Name{
+    width: 705px;
+    height: 68px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Arial;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+
+
+    margin-bottom: 0;
+}
+
+.h1Full { 
+    color: #AEAEAE;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.h1Developer {
+    color: #fff;
+    margin-top: 0;
+}
+
+.homeButtons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 450px;
+    max-height: 59px;
+    margin-left: 89px;
+    margin-top: 45px;
+}
+
+.hireMeButton{
+    border-radius: 10px;
+    display: flex;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    min-width: 188px;
+    height: 59px;
+}
+.resumeButton { 
+    width: 188px;
+    height: 59px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 3px white solid;
+    color: #F2F2F2;
+    font-family: Arial;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    flex-shrink: 0;
+}
+
+.hireMeButton span{
+    width: 100px;
+    height: 24px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Arial;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.1px;
+}

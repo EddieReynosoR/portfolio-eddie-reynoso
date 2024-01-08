@@ -1,0 +1,10 @@
+footer{
+    min-height: 200px;
+    background: black;
+    position: relative;
+    top: 100px;
+}
+
+footer p{
+    color: white;
+}

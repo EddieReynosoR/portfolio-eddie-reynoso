@@ -1,0 +1,125 @@
+.AboutMe-Container{
+    /* min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    height: auto;
+    min-width: 0px;
+    max-width: 99999px;
+    max-height: 99999px;
+    
+    align-self: stretch;
+    justify-self: stretch;
+    position: sticky;
+    margin: 0;
+    grid-area: 2/1/3/2;
+    background: #fff; */
+
+    min-height: 92.41192411924119vh;
+    --l_display: unset;
+    height: auto;
+    min-width: 0px;
+    max-width: 99999px;
+    max-height: 99999px;
+    align-self: stretch;
+    justify-content: stretch;
+    position:relative;
+    padding-top: 60px;
+
+    background: #ffffff;
+
+    top: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    transform: translate3d(0,0,0);
+
+
+
+    --top: 0%;
+    --is-sticky: 1;
+    --sticky-offset: 0px;
+}
+
+.AboutMe-Text p{    
+    font-family: 'Poppins', sans-serif;
+    text-wrap: pretty;
+}
+
+.div1 { 
+    grid-area: 1 / 1 / 6 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+.div2 { 
+    grid-area: 1 / 3 / 5 / 6; 
+}
+
+.div2 h3{
+    color: #000;
+    margin: 0;
+    font-family: Arial;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.div2 h1{
+    color: #000;
+    margin-top: 0;
+    font-family: Arial;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.div2 .AboutMe-Text{
+    max-width: 650px;
+    max-height: 327px;
+}
+
+.div2 p{
+    color: #000;
+
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.div3 { grid-area: 5 / 3 / 6 / 6; }
+
+.div3 .social-Icons{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    max-width: 130px;
+}
+.div3 .social-Icons li{
+    display: list-item;
+}
+.div3 .social-Icons li img{
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+
+
+.fotoPerfil{
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
+
+    margin: 0;
+    position: relative;
+    /* top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+}
