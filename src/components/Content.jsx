@@ -16,18 +16,6 @@ export const Content = () => {
                                     <li>
                                             <a href="" className={styles['headerContent-navContent-a']}>
                                                 <div className={styles['li-line']}></div>
-                                                <span style={{marginLeft:'0.5rem'}}>Experience</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="" className={styles['headerContent-navContent-a']}>
-                                                <div className={styles['li-line']}></div>
-                                                <span style={{marginLeft:'0.5rem'}}>Certifications</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="" className={styles['headerContent-navContent-a']}>
-                                                <div className={styles['li-line']}></div>
                                                 <span style={{marginLeft:'0.5rem'}}>Projects</span>
                                             </a>
                                         </li>
@@ -37,13 +25,31 @@ export const Content = () => {
                                                 <span style={{marginLeft:'0.5rem'}}>Skills</span>
                                             </a>
                                         </li>
+                                        <li>
+                                            <a href="" className={styles['headerContent-navContent-a']}>
+                                                <div className={styles['li-line']}></div>
+                                                <span style={{marginLeft:'0.5rem'}}>Experience</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" className={styles['headerContent-navContent-a']}>
+                                                <div className={styles['li-line']}></div>
+                                                <span style={{marginLeft:'0.5rem'}}>Certification</span>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
                     </header>
                     <div className={styles['projectsContent']}>
-                        <h1>Certification</h1>
+                        <h1 className={styles['projectsTitle']}>Projects</h1>
+                        <Certification/>
+                        <h1 className={styles['projectsTitle']}>Skills</h1>
+                        <Certification/>
+                        <h1 className={styles['projectsTitle']}>Experience</h1>
+                        <Certification/>
+                        <h1 className={styles['projectsTitle']}>Certification</h1>
                         <Certification/>
                     </div>
                 </div>
