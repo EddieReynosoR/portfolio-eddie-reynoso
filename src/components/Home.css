@@ -13,8 +13,8 @@
 }
 
 .homeContainer .homeTitle{
-    margin-left: 89px;
-    margin-right: 89px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 .buttons-Container{
@@ -78,9 +78,10 @@
     margin-top: 0;
     margin-bottom: 0;
     height: 300px;
-    margin-top: 30px;
+    margin-top: 50px;
     font-size: 210px;
     text-align: center;
+    width: 100%;
 }
 
 .h1Developer {
