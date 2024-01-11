@@ -33,7 +33,7 @@
     flex-direction: column; 
     gap: 0.25rem; 
     color: #000;
-    font-family: Arial;
+    font-family: 'DM Sans', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -57,9 +57,13 @@
     text-decoration: none;
 }
 
+.article-TitleAnchor span{
+    font-family: 'DM Sans', sans-serif;
+}
+
 .article-Subtitle{
     color: #707070;
-    font-family: Arial;
+    font-family: 'DM Sans', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -68,7 +72,7 @@
 
 .article-p{
     color: #000;
-    font-family: Arial;
+    font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -104,7 +108,7 @@
 
 .article-ListItem span{
     color: #000;
-    font-family: Arial;
+    font-family: 'DM Sans', sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;

@@ -45,7 +45,7 @@
 
 .homeContainer .homeTitle p{
     color: #FFF;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -62,7 +62,7 @@
     height: 0px;
     flex-shrink: 0;
     color: #FFF;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'DM Sens', sans-serif;
     font-size: 26px;
     font-style: normal;
     font-weight: 400;

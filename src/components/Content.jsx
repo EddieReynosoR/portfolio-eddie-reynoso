@@ -1,5 +1,6 @@
 import styles from './Content.module.css'
 import { Certification } from './Certification';
+import { Project } from './Project';
 
 export const Content = () => {
     return (
@@ -44,7 +45,7 @@ export const Content = () => {
                     </header>
                     <div className={styles['projectsContent']}>
                         <h1 className={styles['projectsTitle']}>Projects</h1>
-                        <Certification/>
+                        <Project/>
                         <h1 className={styles['projectsTitle']}>Skills</h1>
                         <Certification/>
                         <h1 className={styles['projectsTitle']}>Experience</h1>

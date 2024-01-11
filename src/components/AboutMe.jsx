@@ -32,8 +32,8 @@ export const AboutMe = () => {
             <div className='div3'>
                 <section>
                     <ul className='social-Icons'>
-                        <li><a href="https://github.com/EddieReynosoR" target='_blank' title='Github'><img src="./github.svg" alt="" /></a></li>
-                        <li><a href="https://www.linkedin.com/in/eduardo-reynoso-rosales-8a9590280/" target='_blank' title='Linkedin'><img src="./linkedin.svg" alt="" /></a></li>
+                        <li><a href="https://github.com/EddieReynosoR" target='_blank' title='Github'><img src="./github.svg" alt="Logo" /></a></li>
+                        <li><a href="https://www.linkedin.com/in/eduardo-reynoso-rosales-8a9590280/" target='_blank' title='Linkedin'><img src="./linkedin.svg" alt="Logo" /></a></li>
                     </ul>
                 </section>
             </div>
