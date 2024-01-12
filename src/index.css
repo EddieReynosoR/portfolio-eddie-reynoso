@@ -29,7 +29,7 @@ body{
     font-family: 'DM Sans', sans-serif;
     font-size: 10px;
     display: block;
-    background-image: url('https://static.wixstatic.com/media/886bca_3e3e0f3223ab472f88719188c5574664~mv2.gif');
+    background-image: url('/fondo.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
