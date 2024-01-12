@@ -5,7 +5,7 @@ export const AboutMe = () => {
     return(
         <section className="AboutMe-Container" id='about'>
             <div className='home-Back'>
-                <a href="#home">Home</a>
+                {/* <a href="#home">Home</a> */}
             </div>
             <div className='div1'>
                 <picture>

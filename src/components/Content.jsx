@@ -15,25 +15,25 @@ export const Content = () => {
                                 <nav className={styles['headerContent-nav']}>
                                     <ul className={styles['headerContent-navContent']}>
                                     <li>
-                                            <a href="" className={styles['headerContent-navContent-a']}>
+                                            <a href="#projects" className={styles['headerContent-navContent-a']}>
                                                 <div className={styles['li-line']}></div>
                                                 <span style={{marginLeft:'0.5rem'}}>Projects</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="" className={styles['headerContent-navContent-a']}>
+                                            <a href="#skills" className={styles['headerContent-navContent-a']}>
                                                 <div className={styles['li-line']}></div>
                                                 <span style={{marginLeft:'0.5rem'}}>Skills</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="" className={styles['headerContent-navContent-a']}>
+                                            <a href="#experience" className={styles['headerContent-navContent-a']}>
                                                 <div className={styles['li-line']}></div>
                                                 <span style={{marginLeft:'0.5rem'}}>Experience</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="" className={styles['headerContent-navContent-a']}>
+                                            <a href="#certifications" className={styles['headerContent-navContent-a']}>
                                                 <div className={styles['li-line']}></div>
                                                 <span style={{marginLeft:'0.5rem'}}>Certification</span>
                                             </a>
@@ -44,13 +44,13 @@ export const Content = () => {
                         </div>
                     </header>
                     <div className={styles['projectsContent']}>
-                        <h1 className={styles['projectsTitle']}>Projects</h1>
+                        <h1 id='projects' className={styles['projectsTitle']}>Projects</h1>
                         <Project/>
-                        <h1 className={styles['projectsTitle']}>Skills</h1>
+                        <h1 id='skills' className={styles['projectsTitle']}>Skills</h1>
                         <Certification/>
-                        <h1 className={styles['projectsTitle']}>Experience</h1>
+                        <h1 id='experience' className={styles['projectsTitle']}>Experience</h1>
                         <Certification/>
-                        <h1 className={styles['projectsTitle']}>Certification</h1>
+                        <h1 id='certifications' className={styles['projectsTitle']}>Certification</h1>
                         <Certification/>
                     </div>
                 </div>

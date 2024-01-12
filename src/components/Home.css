@@ -3,7 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
+@font-face {
+    font-family: 'druk_wide_webbold';
+    src: url('/fonts/druk_wide_web_bold_regular-webfont.woff2') format('woff2'),
+         url('/fonts/druk_wide_web_bold_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 .homeContainer {
     max-width: 100%;
     min-height: 628px;
@@ -20,7 +29,6 @@
 .buttons-Container{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
     width: fit-content;
 }
 .buttons{
@@ -28,9 +36,8 @@
     width: fit-content;
 }
 
-.h1Full, .h1Developer{
-    /* font-family: 'Permanent Marker', cursive; */
-    font-family: 'Shadows Into Light', cursive;
+.h1Full, .h1Developer1, .h1Developer2{
+    font-family: 'druk_wide_webbold';
     font-style: normal;
     font-weight: 900;
     line-height: normal;
@@ -57,40 +64,52 @@
     width: 900px;
 }
 
-.h1Name{
+/* .h1Name{
+    -webkit-text-stroke: 1px #fff; 
+    color: transparent;
     width: 705px;
     height: 0px;
     flex-shrink: 0;
-    color: #FFF;
-    font-family: 'DM Sens', sans-serif;
+    font-family: 'druk_wide_webbold';
     font-size: 26px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 1.8px;
-
+    
 
     margin-bottom: 0;
-}
+} */
 
-.h1Full { 
+.h1Full {
     color: #cfcfcf;
     margin-top: 0;
     margin-bottom: 0;
     height: 300px;
     margin-top: 20px;
-    font-size: 200px;
+    font-size: 150px;
     text-align: center;
     width: 100%;
 }
 
-.h1Developer {
-    color: #a4a4a4;
+.h1Developer1 {
+    -webkit-text-stroke: 1px #fff; 
+    color: transparent;
     margin-top: 0;
     margin-bottom: 0;
-    height: 100px;
+    height: fit-content;
     font-size: 60px;
-    text-align: center;
+    text-align: left;
+}
+
+.h1Developer2 {
+    -webkit-text-stroke: 1px #fff; 
+    color: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: fit-content;
+    font-size: 60px;
+    text-align: right;
 }
 
 .homeButtons {

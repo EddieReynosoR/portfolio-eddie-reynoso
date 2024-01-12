@@ -4,10 +4,10 @@ export const Home = () => {
     return (
         <section className='homeContainer'>
             <header className='homeTitle'>
-                <h1 className='h1Name'>Hey there! 👋 I am...</h1>
+            <h1 className='h1Developer1'>FULL-STACK</h1>
                 <div className='developerContainer'>
                     <h1 className='h1Full'>EDDIE REYNOSO</h1>
-                    <h1 className='h1Developer'>FULL-STACK DEVELOPER</h1>
+                    <h1 className='h1Developer2'>DEVELOPER</h1>
                 </div>
                 <div className='buttons-Container'>
                     <div className='buttons'>
