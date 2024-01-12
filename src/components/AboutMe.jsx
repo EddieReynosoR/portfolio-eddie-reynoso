@@ -14,8 +14,8 @@ export const AboutMe = () => {
             </div>
             <div className='div2'>
                 <header>
-                    <h3>About Me</h3>
-                    <h1>Eduardo Reynoso</h1>
+                    <h1 className='aboutme'>About Me</h1>
+                    <h1 className='name'>Eduardo Reynoso</h1>
                 </header>
                 <section className='AboutMe-Text'>
                     <p>
