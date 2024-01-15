@@ -1,5 +1,4 @@
 import { forwardRef } from 'react'
-import { useSections } from '../hooks/useSections'
 import styles from './Skills.module.css'
 
 // React JS
