@@ -1,9 +1,16 @@
+import { motion } from 'framer-motion'
+import { fadeIn } from '../animations'
 import './Home.css'
 
 export const Home = () => {
     return (
         <section className='homeContainer'>
-            <header className='homeTitle'>
+            <motion.header 
+            variants={fadeIn(0.5)}
+            initial="hidden"
+            animate="show"
+            id="headerTitle"
+            className='homeTitle'>
                 <div className='developerContainer'>
                     <h1 className='h1Developer1'>FULL-STACK</h1>
                     <h1 className='h1Full'>EDDIE REYNOSO</h1>
@@ -18,7 +25,7 @@ export const Home = () => {
                     </div>
             </div>
                 </div>
-            </header>
+            </motion.header>
         </section>
     )
 }

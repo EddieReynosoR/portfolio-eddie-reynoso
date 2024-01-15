@@ -1,6 +1,6 @@
 import styles from './Content.module.css'
 import { Certifications } from './Certifications';
-import { Projects } from './Projects';
+import { Projects } from './Projects/Projects';
 import { Skills } from './Skills';
 import { useSections } from '../hooks/useSections';
 import { Experiences } from './Experiences';

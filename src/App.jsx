@@ -1,9 +1,9 @@
-import { NavBar } from "./components/Navbar"
+import { NavBar } from "./components/Navbar/Navbar"
 import { Home } from "./components/Home"
 import { AboutMe } from "./components/AboutMe"
 import { Footer } from "./components/Footer"
 import { Content } from "./components/Content"
-import {  useEffect } from "react"
+import { useEffect } from "react"
 import { useSections } from "./hooks/useSections"
 
 function App() {
@@ -13,7 +13,6 @@ function App() {
     skillRef,
     experienceRef,
     certificationRef, 
-    closestSection,
     setClosestSection } = useSections()
 
   useEffect(()=>{
