@@ -16,10 +16,10 @@ export const Skills = forwardRef((props, ref) => {
                 <img src="./react.svg" alt="tech-logo" />
             </div>
             <div className={styles['div2']}>
-                <img src="./csharp.png" alt="tech-logo" />
+                <img src="./csharp.webp" alt="tech-logo" />
             </div>
             <div className={styles['div3']}>
-            <img src="./sqlserver.png" alt="tech-logo" />
+            <img src="./sqlserver.webp" alt="tech-logo" />
             </div>
             <div className={styles['div4']}>
                 <img src="./django.svg" alt="tech-logo" />
