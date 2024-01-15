@@ -5,7 +5,7 @@ const projects = [
     {
         name: 'BeSporty',
         description: 'Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti.',
-        image: './943shots_so.jpg',
+        image: './943shots_so.webp',
         technologies: [
             {
                 name: 'Django',
@@ -25,7 +25,7 @@ const projects = [
     {
         name: 'Kemish Music',
         description: 'Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti.',
-        image: './kemishMusic.png',
+        image: './kemishMusic.webp',
         technologies: [
             {
                 name: 'C# Winforms',
