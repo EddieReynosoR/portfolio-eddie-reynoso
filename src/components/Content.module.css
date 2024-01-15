@@ -127,6 +127,42 @@
     transition-duration: 300ms; 
     height: 4px;
     background-color: #000;
+    opacity: .5;
+    margin-right: 10px;
+}
+
+.li-lineSelected{
+    width: 2rem; 
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms; 
+    height: 4px;
+    background-color: #000;
+    margin-right: 10px;
+}
+
+.headerContent-navContent-a:hover .li-line{
+    width: 4rem;
+    opacity: 1;
+}
+
+.headerContent-navContent-a:hover  .li-lineSelected{
+    width: 4rem;
+    opacity: 1;
+}
+
+
+.li-text{
+    margin-top: 0.35rem;
+    opacity: .5;
+}
+
+.li-textSelected{
+    margin-top: 0.35rem;
+}
+
+.headerContent-navContent-a:hover  .li-text{
+    opacity: 1;
 }
 
 /* 

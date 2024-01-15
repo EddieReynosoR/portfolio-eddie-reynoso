@@ -1,8 +1,11 @@
+import { forwardRef } from 'react'
+import { useSections } from '../hooks/useSections'
 import styles from './Certification.module.css'
 
-export const Certification = () => {
+export const Experiences = forwardRef((props, ref) => {
+
     return (
-        <article style={{marginBottom: 3.5 + 'em' }}>
+        <article style={{marginBottom: 3.5 + 'em' }} ref={ref}>
             <div className={styles['article-Container']}>
                 <header className={styles['article-Header']}>
                     <span className={styles['article-HeaderText']}>DECEMBER 2022</span>
@@ -30,7 +33,7 @@ export const Certification = () => {
                             <div className={styles['article-ListItem']}><span>Backend</span></div>
                         </li>
                         <li style={{marginRight: '0.375rem', marginTop: '0.5rem' }}>
-                            <div className={styles['article-ListItem']}><span>Softeare Engineering</span></div>
+                            <div className={styles['article-ListItem']}><span>Software Engineering</span></div>
                         </li>
                     </ul>
                 </div>
@@ -38,4 +41,4 @@ export const Certification = () => {
             </div>
         </article>
     )
-}
+})

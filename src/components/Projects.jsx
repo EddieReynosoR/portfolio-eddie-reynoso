@@ -1,8 +1,11 @@
+import { forwardRef } from 'react'
+import { useSections } from '../hooks/useSections'
 import styles from './Project.module.css'
 
-export const Project = () => {
+export const Projects = forwardRef((props, ref) => {
+
     return(
-        <article className={styles['project-Container']}>
+        <article className={styles['project-Container']} ref={ref}>
             <img src="./943shots_so.jpg" alt="Project image" />
             <section className={styles['project-Info']}>
                 <h3 className={styles['project-Title']}>Project</h3>
@@ -22,4 +25,4 @@ export const Project = () => {
             </section>
         </article>
     )
-}
+})

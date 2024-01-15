@@ -1,8 +1,48 @@
 import styles from './Content.module.css'
-import { Certification } from './Certification';
-import { Project } from './Project';
+import { Certifications } from './Certifications';
+import { Projects } from './Projects';
+import { Skills } from './Skills';
+import { useSections } from '../hooks/useSections';
+import { Experiences } from './Experiences';
+
+{/* <li>
+    <a href="#certifications" className={styles['headerContent-navContent-a']}>
+        <div className={styles['li-line']}></div>
+        <span style={{marginLeft:'0.5rem'}}>Certification</span>
+    </a>
+</li> */}
+
+
+const navElements = [
+    {
+        text: "Projects",
+        link: "#projects"
+    },
+    {
+        text: "Skills",
+        link: "#skills"
+    },
+    {
+        text: "Experience",
+        link: "#experience"
+    },
+    {
+        text: "Certifications",
+        link: "#certifications"
+    }
+]
 
 export const Content = () => {
+
+    const {
+        projectRef,
+        skillRef,
+        experienceRef,
+        certificationRef,
+        closestSection
+        } = useSections()
+
+
     return (
         <section className={styles['Projects-Container']} id='projects'>
             <div className={styles['second-Container']}>
@@ -14,30 +54,19 @@ export const Content = () => {
                                 <p className={styles['headerContent-p']}>Check the projects that I’ve made, and with which technologies were created.</p>
                                 <nav className={styles['headerContent-nav']}>
                                     <ul className={styles['headerContent-navContent']}>
-                                    <li>
-                                            <a href="#projects" className={styles['headerContent-navContent-a']}>
-                                                <div className={styles['li-line']}></div>
-                                                <span style={{marginLeft:'0.5rem'}}>Projects</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#skills" className={styles['headerContent-navContent-a']}>
-                                                <div className={styles['li-line']}></div>
-                                                <span style={{marginLeft:'0.5rem'}}>Skills</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#experience" className={styles['headerContent-navContent-a']}>
-                                                <div className={styles['li-line']}></div>
-                                                <span style={{marginLeft:'0.5rem'}}>Experience</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#certifications" className={styles['headerContent-navContent-a']}>
-                                                <div className={styles['li-line']}></div>
-                                                <span style={{marginLeft:'0.5rem'}}>Certification</span>
-                                            </a>
-                                        </li>
+                                        {
+                                            navElements.map((item, index) => {
+                                                const isActive = item.text === closestSection
+                                                return (
+                                                    <li key={index}>
+                                                        <a href={item.link} className={styles['headerContent-navContent-a']}>
+                                                            <div className={isActive ? styles['li-lineSelected'] : styles['li-line']}></div>
+                                                            <span className={isActive ? styles['li-textSelected'] : styles['li-text']}>{item.text}</span>
+                                                        </a>
+                                                    </li>
+                                                )
+                                            })
+                                        }
                                     </ul>
                                 </nav>
                             </div>
@@ -45,13 +74,13 @@ export const Content = () => {
                     </header>
                     <div className={styles['projectsContent']}>
                         <h1 id='projects' className={styles['projectsTitle']}>Projects</h1>
-                        <Project/>
+                        <Projects ref = {projectRef}/>
                         <h1 id='skills' className={styles['projectsTitle']}>Skills</h1>
-                        <Certification/>
+                        <Skills ref={skillRef}/>
                         <h1 id='experience' className={styles['projectsTitle']}>Experience</h1>
-                        <Certification/>
+                        <Experiences ref={experienceRef}/>
                         <h1 id='certifications' className={styles['projectsTitle']}>Certification</h1>
-                        <Certification/>
+                        <Certifications ref={certificationRef}/>
                     </div>
                 </div>
             </div>
