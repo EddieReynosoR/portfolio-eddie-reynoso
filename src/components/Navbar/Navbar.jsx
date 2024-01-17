@@ -11,7 +11,7 @@ const links = [
         href: '#expecience'
     },
     {
-        text: 'Project',
+        text: 'Projects',
         href: '#projects'
     },
 ]

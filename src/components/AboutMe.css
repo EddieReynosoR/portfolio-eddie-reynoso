@@ -1,24 +1,9 @@
 
 .AboutMe-Container{
-    /* min-height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: minmax(0, 1fr);
-    height: auto;
-    min-width: 0px;
-    max-width: 99999px;
-    max-height: 99999px;
-    
-    align-self: stretch;
-    justify-self: stretch;
-    position: sticky;
-    margin: 0;
-    grid-area: 2/1/3/2;
-    background: #fff; */
 
-    min-height: 105vh;
+    height: 105vh;
     --l_display: unset;
-    height: auto;
+    min-height: 70vh;
     min-width: 0px;
     max-width: 99999px;
     max-height: 99999px;
@@ -35,22 +20,11 @@
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-
-    transform: translate3d(0,0,0);
-
-
-
-    --top: 0%;
-    --is-sticky: 1;
-    --sticky-offset: 0px;
 }
 
 .AboutMe-Text p{    
     font-family: 'DM Sans', sans-serif;
     text-wrap: pretty;
-}
-.home-Back{
-    grid-area: 1 / 1 / 2 / 3;
 }
 
 .home-Back a{
@@ -58,12 +32,13 @@
 }
 
 .div1 { 
-    grid-area: 2 / 1 / 6 / 3;
+    grid-area: 1 / 1 / 4 / 3;
     display: flex;
     justify-content: center;
+    align-items: center;
  }
 .div2 { 
-    grid-area: 1 / 3 / 5 / 6; 
+    grid-area: 1 / 3 / 4 / 6; 
 }
 
 .div2 .aboutme{
@@ -100,15 +75,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    width: 90%;
 }
 .div3 { 
     grid-area: 5 / 3 / 6 / 6; 
     padding-top: 20px;
 }
 
-.aboutme{
-    font-size: 10px;
-}
+
 
 .div3 .social-Icons{
     display: flex;
@@ -137,4 +111,169 @@
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); */
+}
+
+@media (min-width:601px) and (max-width: 920px){
+
+    .div1{
+        grid-area: 1 / 1 / 3 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div3{
+        grid-area:4 / 3 / 6 / 6; 
+    }
+
+    .div3 .social-Icons{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        max-width: 160px;
+    }
+}
+
+
+
+
+@media (min-width: 200px) and (max-width: 1280px) {
+
+    .fotoPerfil{
+        width: calc((28.4 * 1vmax) - (12px*0.01422));
+        height: calc((28.4 * 1vmax) - (12px*0.01422));
+    }
+    .div2 .aboutme{
+        font-size: calc((2.4 * 1vmax) - (12px*0.01422));
+    }
+    
+    .div2 .name{
+        font-size: calc((5.1 * 1vmax) - (12px*0.01422));
+    }
+
+    .div2 p{
+        font-size: calc((1.6 * 1vmax) - (12px*0.01422));
+    }
+
+
+}
+@media (min-width: 800px) and (max-width: 1280px){
+    .div3 .social-Icons li img{
+        width: calc((3.8 * 1vmax) - (12px*0.01422));
+        height: calc((3.8 * 1vmax) - (12px*0.01422));
+        color: black;
+    }
+}
+@media (min-width:360px) and (max-width: 800px){
+
+    .fotoPerfil{
+        width: 170px;
+        height: 170px;
+    }
+    .div1{
+        grid-area: 1 / 1 / 3 / 3;
+        display: flex;
+        padding-right: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .div2{
+        padding-right: 20px;
+        grid-area: 1 / 3 / 4 / 6; 
+    }
+
+    .div2 .aboutme{
+        font-size: 14px;
+    }
+    
+    .div2 .name{
+        font-size: 30px;
+    }
+
+    .div2 .AboutMe-Text{
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .div2 p{
+        font-size: 10px;
+        text-align: left;
+        text-wrap: pretty;
+        width: 100%;
+    }
+
+    .div3 .social-Icons li img{
+        width: 30px;
+        height:30px;
+        color: black;
+    }
+
+    .div3{
+        grid-area:3 / 3 / 6 / 6; 
+    }
+}
+
+@media (min-width:360px) and (max-width: 600px){
+    .AboutMe-Container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        height: 70vh;
+    }
+
+    .fotoPerfil{
+        width: 120px;
+        height: 120px;
+    }
+    .div1{
+        grid-area: 1 / 1 / 1 / 1;
+        display: flex;
+        padding-right: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .div2{
+        padding-right: 0;
+        grid-area: 2 / 1 / 2 / 2; 
+    }
+
+    .div2 .aboutme{
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .div2 .name{
+        margin-top: 5px;
+        font-size: 30px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .div2 .AboutMe-Text{
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .div2 p{
+        font-size: 10px;
+        text-align: left;
+        text-wrap: pretty;
+        width: 100%;
+    }
+
+    .div3 .social-Icons {
+        width: 100px;
+        padding: 0;
+    }
+
+    .div3 .social-Icons li img{
+        width: 25px;
+        height:25px;
+        color: black;
+    }
+    .div3{
+        display: flex;
+        justify-content: center;
+        grid-area:3 / 1 / 3 / 3; 
+    }
 }

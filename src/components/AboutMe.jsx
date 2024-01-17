@@ -5,9 +5,6 @@ import {motion} from 'framer-motion'
 export const AboutMe = () => {
     return(
         <section className="AboutMe-Container" id='about'>
-            <div className='home-Back'>
-                {/* <a href="#home">Home</a> */}
-            </div>
             <motion.div
             viewport={{once:true}} 
             variants={slideRight({delay: 0})}
