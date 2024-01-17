@@ -173,7 +173,7 @@
     letter-spacing: 2.1px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .homeContainer {
         max-width: 100%;
         min-height: 628px;
