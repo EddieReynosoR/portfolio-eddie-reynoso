@@ -1,5 +1,8 @@
 import { forwardRef } from 'react'
 import styles from './Skills.module.css'
+import { Skill } from './Skill'
+import { useInView } from 'framer-motion'
+import { slideUp } from '../animations'
 
 // React JS
 // TypeScript
@@ -7,25 +10,38 @@ import styles from './Skills.module.css'
 // C# Windows Forms
 // SQL Server
 
+const skills = [
+    {
+        image: './react.svg'
+    },
+    {
+        image: './csharp.webp'
+    },
+    {
+        image: './sqlserver.webp'
+    },
+    {
+        image: './django.svg'
+    },
+    {
+        image: './typescript.svg'
+    },
+]
+
 export const Skills = forwardRef((props, ref) => {
 
     return (
         <article className={styles['skills-container']} ref={ref}>
-            <div className={styles['div1']}>
-                <img src="./react.svg" alt="tech-logo" />
-            </div>
-            <div className={styles['div2']}>
-                <img src="./csharp.webp" alt="tech-logo" />
-            </div>
-            <div className={styles['div3']}>
-            <img src="./sqlserver.webp" alt="tech-logo" />
-            </div>
-            <div className={styles['div4']}>
-                <img src="./django.svg" alt="tech-logo" />
-            </div>
-            <div className={styles['div5']}>
-                <img src="./typescript.svg" alt="tech-logo" />
-            </div>
+            {skills.map((skill,index) => {
+                return(
+                    <Skill key={index} image={skill.image} index={index} 
+                    variants={slideUp({delay: 0+index/10} )}
+                    initial='hidden' 
+                    whileInView='show'
+                    viewport={{once:true}}
+                    />
+                )
+            })}
         </article>
     )
 })

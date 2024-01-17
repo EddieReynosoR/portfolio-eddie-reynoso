@@ -1,5 +1,6 @@
 import { forwardRef } from 'react'
 import { Project } from './Project'
+import { projectVariants } from '../../animations'
 
 const projects = [
     {
@@ -47,7 +48,10 @@ export const Projects = forwardRef((props, ref) => {
             {
                 projects.map((project, index) => {
                     return (
-                        <Project key={index} name={project.name} description={project.description} image={project.image} technologies={project.technologies} isDeployed={project.isDeployed}/>
+                        <Project key={index} name={project.name} description={project.description} image={project.image} technologies={project.technologies} isDeployed={project.isDeployed}
+                        variants={projectVariants}
+                        initial='hidden' whileInView='show'
+                        />
                     )
                 })
             }

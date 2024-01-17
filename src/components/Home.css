@@ -19,6 +19,7 @@
     top: 120px;
     left: 0px;
     position: sticky;
+    width: 100%;
 }
 
 .homeContainer .homeTitle{
@@ -90,11 +91,12 @@
     color: #cfcfcf;
     margin-top: 0;
     margin-bottom: 0;
-    height: 300px;
+    height: fit-content;
+    margin-bottom: 20px;
     margin-top: 20px;
     font-size: 150px;
     text-align: center;
-    width: 100%;
+    width: fit-content;
 }
 
 .h1Developer1 {
@@ -171,6 +173,214 @@
     letter-spacing: 2.1px;
 }
 
-/* @media (prefers-color-scheme: dark){
+@media (max-width: 500px) {
+    .homeContainer {
+        max-width: 100%;
+        min-height: 628px;
+        top: 120px;
+        left: 0px;
+        position: sticky;
+        width: 100%;
+    }
+    
+    .homeContainer .homeTitle{
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 100%;
+        position: sticky;
+    }
+    
+    .buttons-Container{
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        user-select: none;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        /* width: fit-content; */
+    }
+    
+    .h1Full, .h1Developer1, .h1Developer2{
+        font-family: 'druk_wide_webbold';
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 15px;
+    }
+    
+    .developerContainer{
+        width:100%;
+        height: fit-content;
+        top: 0;
+        user-select: none;
+        margin-bottom: 50px;
+    }
+    
+    .homeContainer .homeTitle p{
+        color: #FFF;
+        font-family: 'DM Sans', sans-serif;
+        font-size: calc((1.422 * 1vmax) - (12px*0.01422));
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.4px;
+        line-height: 30px;
+        margin-bottom: 0;
+        margin-top: 0;
+        width: fit-content;
+        text-align: center;
+    }
+    
+    /* .h1Name{
+        -webkit-text-stroke: 1px #fff; 
+        color: transparent;
+        width: 705px;
+        height: 0px;
+        flex-shrink: 0;
+        font-family: 'druk_wide_webbold';
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.8px;
+        
+    
+        margin-bottom: 0;
+    } */
+    
+    .h1Full {
+        color: #cfcfcf;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: fit-content;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 150px;
+        text-align: center;
+        width: fit-content;
+    }
+    
+    .h1Developer1 {
+        -webkit-text-stroke: 1px #fff; 
+        color: transparent;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: fit-content;
+        font-size: 60px;
+        text-align: center;
+    }
+    
+    .h1Developer2 {
+        -webkit-text-stroke: 1px #fff; 
+        color: transparent;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: fit-content;
+        font-size: 60px;
+        text-align: center;
+    }
+    
+    .homeButtons {
+        margin-top: 100px;
+        margin-left: 20px;
+        width: 100%;
+        max-height: 49px;
+        
+    }
+    
+    .hireMeButton{
+        border-radius: 10px;
+        display: flex;
+        box-sizing: border-box;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        width: 168px;
+        height: 49px;
+        margin-right: 12%;
+    }
+    .resumeButton { 
+        width: 178px;
+        height: 49px;
+        border-radius: 10px;
+        cursor: pointer;
+        background: transparent;
+        border: 3px white solid;
+        color: #F2F2F2;
+        font-family: Arial;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.1px;
+    }
+    
+    .hireMeButton span{
+        width: 100px;
+        height: 14px;
+        flex-shrink: 0;
+        color: #000;
+        font-family: Arial;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.1px;
+        text-align: center;
+    }
+}
 
-} */
+@media (min-width: 500px) and (max-width: 1500px) {
+    .homeContainer .homeTitle p{
+        font-size: calc((2.1 * 1vmax) - (12px*0.01422));    
+    }
+
+    .h1Full {
+        font-size:  calc((10.1 * 1vw) - (12px*0.01422));
+    }
+    
+    .h1Developer1 {
+        font-size:  calc((4.2 * 1vw) - (12px*0.01422));
+    }
+    
+    .h1Developer2 {
+        font-size:  calc((4.2 * 1vw) - (12px*0.01422));
+    }
+
+    .hireMeButton{
+        border-radius: 10px;
+        display: flex;
+        box-sizing: border-box;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        width: 168px;
+        height: 49px;
+        margin-right: 12%;
+    }
+    .resumeButton { 
+        width: 178px;
+        height: 49px;
+        border-radius: 10px;
+        cursor: pointer;
+        background: transparent;
+        border: 3px white solid;
+        color: #F2F2F2;
+        font-family: Arial;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.1px;
+    }
+}

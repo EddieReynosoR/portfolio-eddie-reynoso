@@ -49,3 +49,97 @@ export const slideIn = ({delay=0, direction= 'up', offset = 10}) => {
         },
     }
 }
+
+export const slideUp = ({
+  delay = 0,
+  duration = 1.25,
+  offset = 20,
+}) => ({
+  hidden: {
+    y: offset,
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      delay,
+      duration,
+    },
+  },
+});
+
+export const slideRight = ({
+  delay = 0,
+  duration = 1.25,
+  offset = 20,
+}) => ({
+  hidden: {
+    x: 0,
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    x: offset,
+    transition: {
+      type: 'spring',
+      delay,
+      duration,
+    },
+  },
+});
+
+export const smoothAppear =  ({
+  delay = 0,
+  duration = 1.25,
+}) => ({
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      type: 'spring',
+      delay,
+      duration,
+    },
+  },
+});
+
+
+export const skillsVariants = {
+  hidden: {
+    opacity: 0,
+    y: 40,
+  },
+  show: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 150,
+      damping: 20,
+      delay: 0.2 * i,
+      // duration: 0.5,
+    },
+  }),
+};
+
+export const projectVariants = {
+  hidden: {
+    opacity: 0,
+    x: 40,
+  },
+  show: (i) => ({
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 150,
+      damping: 20,
+      delay: 0.2 * i,
+      // duration: 0.5,
+    },
+  }),
+};

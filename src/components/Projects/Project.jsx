@@ -1,8 +1,13 @@
+import {motion} from 'framer-motion'
 import styles from './Project.module.css'
 
-export const Project = ({name, description, technologies, image, isDeployed}) => {
+export const Project = ({name, description, technologies, image, isDeployed, ...rest}) => {
     return (
-        <article className={styles['project-Container']}>
+        <motion.article 
+        {...rest}
+        viewport={{once:true}}
+        className={styles['project-Container']}
+        >
             <img src={image} alt="Project image" />
             <section className={styles['project-Info']}>
                 <h3 className={styles['project-Title']}>{name}</h3>
@@ -26,6 +31,6 @@ export const Project = ({name, description, technologies, image, isDeployed}) =>
                 </div>
                 
             </section>
-        </article>
+        </motion.article>
     )
 }

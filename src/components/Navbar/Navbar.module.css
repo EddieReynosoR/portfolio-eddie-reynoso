@@ -18,3 +18,39 @@
     color: white;
 }
 
+
+@media (max-width: 500px){
+    .navBar { 
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .navBarP {
+        padding:0 20px 33px 0 33px;
+        font-size: calc((2.1 * 1vmax) - (12px*0.01422));
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navBarPAnchor{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1000px) {
+    .navBarP{
+        font-size: calc((2.1 * 1vmax) - (12px*0.01422)); 
+    }
+    .navBarPAnchor{
+        text-decoration: none;
+        color: white;
+    }
+}
+
