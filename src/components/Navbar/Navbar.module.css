@@ -44,7 +44,7 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 1000px) {
+@media (min-width: 200px) and (max-width: 1000px) {
     .navBarP{
         font-size: calc((2.1 * 1vmax) - (12px*0.01422)); 
     }
