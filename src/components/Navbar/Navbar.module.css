@@ -19,7 +19,7 @@
 }
 
 
-@media only screen and (max-width: 300px){
+@media (max-width: 500px){
     .navBar { 
         position: sticky;
         top: 0;
