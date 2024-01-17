@@ -218,7 +218,7 @@
     .AboutMe-Container{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        height: 70vh;
+        height: 90vh;
     }
 
     .fotoPerfil{
@@ -238,13 +238,15 @@
     }
 
     .div2 .aboutme{
-        font-size: 14px;
+        font-size: 18px;
+        margin-bottom: 10px;
         text-align: center;
     }
     
     .div2 .name{
         margin-top: 5px;
-        font-size: 30px;
+        margin-bottom: 20px;
+        font-size: 40px;
         line-height: 28px;
         text-align: center;
     }
