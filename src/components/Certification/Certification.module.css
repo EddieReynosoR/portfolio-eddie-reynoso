@@ -21,7 +21,7 @@
     font-weight: 500;
     line-height: 1.6rem;
 
-    width: 128px;
+    width: 120px;
     height: 51px;
 }
 
@@ -78,8 +78,9 @@
     font-weight: 400;
     line-height: 1.25rem; 
     margin-top: 0.5rem; 
-    width: 354px;
+    width: 300px;
     height: 79px;
+    text-wrap: pretty;
 }
 
 .article-List{
@@ -120,6 +121,7 @@
     width: 1rem; 
     height: 1rem; 
 }
+
 @media (min-width: 640px) { 
     .article-Container{
         grid-template-columns: repeat(8, minmax(0, 1fr)); 
@@ -137,5 +139,11 @@
 @media (min-width: 768px) { 
     .article-Container{
     gap: 9rem; 
+    }
+}
+
+@media (min-width:360px) and (max-width:1000px){
+    .article-Header{   
+        width: 150px;
     }
 }

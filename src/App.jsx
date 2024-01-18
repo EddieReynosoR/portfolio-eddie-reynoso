@@ -1,8 +1,8 @@
 import { NavBar } from "./components/Navbar/Navbar"
-import { Home } from "./components/Home"
-import { AboutMe } from "./components/AboutMe"
-import { Footer } from "./components/Footer"
-import { Content } from "./components/Content"
+import { Home } from "./pages/Home/Home"
+import { AboutMe } from "./pages/AboutMe/AboutMe"
+import { Footer } from "./components/Footer/Footer"
+import { Content } from "./pages/Content/Content"
 import { useEffect } from "react"
 import { useSections } from "./hooks/useSections"
 

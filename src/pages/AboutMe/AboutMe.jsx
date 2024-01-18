@@ -1,4 +1,4 @@
-import { slideRight, smoothAppear } from '../animations'
+import { slideRight, smoothAppear } from '../../animations'
 import './AboutMe.css'
 import {motion} from 'framer-motion'
 
@@ -12,7 +12,7 @@ export const AboutMe = () => {
             whileInView='show'
             className='div1'>
                 <picture>
-                    <img src="./default.jpg" alt="Imagen" className='fotoPerfil'/>
+                    <img src="./images/default.jpg" alt="Imagen" className='fotoPerfil'/>
                 </picture>
             </motion.div>
             <motion.div
@@ -45,8 +45,8 @@ export const AboutMe = () => {
             className='div3'>
                 <section>
                     <ul className='social-Icons'>
-                        <li><a href="https://github.com/EddieReynosoR" target='_blank' title='Github'><img src="./github.svg" alt="Logo" /></a></li>
-                        <li><a href="https://www.linkedin.com/in/eduardo-reynoso-rosales-8a9590280/" target='_blank' title='Linkedin'><img src="./linkedin.svg" alt="Logo" /></a></li>
+                        <li><a href="https://github.com/EddieReynosoR" target='_blank' title='Github'><img src="./images/github.svg" alt="Logo" /></a></li>
+                        <li><a href="https://www.linkedin.com/in/eduardo-reynoso-rosales-8a9590280/" target='_blank' title='Linkedin'><img src="./images/linkedin.svg" alt="Logo" /></a></li>
                     </ul>
                 </section>
             </motion.div>

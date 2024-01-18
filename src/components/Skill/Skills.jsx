@@ -2,7 +2,7 @@ import { forwardRef } from 'react'
 import styles from './Skills.module.css'
 import { Skill } from './Skill'
 import { useInView } from 'framer-motion'
-import { slideUp } from '../animations'
+import { slideUp } from '../../animations'
 
 // React JS
 // TypeScript
@@ -12,19 +12,19 @@ import { slideUp } from '../animations'
 
 const skills = [
     {
-        image: './react.svg'
+        image: './images/react.svg'
     },
     {
-        image: './csharp.webp'
+        image: './images/csharp.webp'
     },
     {
-        image: './sqlserver.webp'
+        image: './images/sqlserver.webp'
     },
     {
-        image: './django.svg'
+        image: './images/django.svg'
     },
     {
-        image: './typescript.svg'
+        image: './images/typescript.svg'
     },
 ]
 

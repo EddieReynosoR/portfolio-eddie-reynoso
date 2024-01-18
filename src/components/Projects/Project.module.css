@@ -12,15 +12,6 @@
 
 
 
-.project-Container img{
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-    display: block;
-    pointer-events: none;
-}
-
-
 @keyframes change-opacity {
     from {
         opacity: 0;
@@ -35,6 +26,24 @@
     }
     to {
         opacity: 0;
+    }
+}
+
+
+@keyframes zoom-in {
+    from {
+        transform: scale(1,1);
+    }
+    to {
+        transform: scale(1.5,1.5);
+    }
+}
+@keyframes zoom-out {
+    from {
+        transform: scale(1.5,1.5);
+    }
+    to {
+        transform: scale(1,1);
     }
 }
 
@@ -61,6 +70,38 @@
     animation: change-opacity .3s ease-in-out;
     animation-fill-mode: forwards;
 }
+
+@keyframes zooming-in {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+@keyframes zooming-out {
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.project-Container img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    display: block;
+    pointer-events: none;
+    animation: zooming-out .4s ease-in-out;
+}
+
+.project-Container:hover img{
+    animation: zooming-in .4s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
 
 .project-Title{
     color: #fff;
@@ -138,21 +179,127 @@
     vertical-align: middle;
 }
 
-@media (min-width:601px) and (max-width: 1280px){
+
+
+
+@media (min-width:500px) and (max-width: 1000px){
+    .project-Container{
+        width: 100%;
+        height: calc((45.1 * 1vmax) - (12px*0.01422));
+    }
     
+
+    .project-Info{
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to bottom,#0000000c,#000c 95%);
+        padding: 2rem 2rem 1rem 2rem;
+        opacity: 0;
+        animation: reverse-opacity .3s ease-in-out;
+        animation-fill-mode: forwards;
+        width: 100%;
+        font-family: 'DM Sans', sans-serif;
+    }
+    
+    
+    .project-Container:hover .project-Info{ 
+        animation: change-opacity .3s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    
+    .project-Title{
+        color: #fff;
+        font-size: 32px;
+    }
+    
+    .project-Desc{
+        line-height: 1.5rem;
+        margin-top: 0.5rem;
+        font-size: 15px;
+        color: #dedede;
+        width: 75%;
+        text-wrap: pretty;
+    }
+    
+    .project-ListTag{
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 0.5rem;
+    }
+    
+    .project-Tags{
+        display: flex;
+        padding-inline: 0.8rem;
+        padding-block: 0.3rem;
+        background-color: #171f26;
+        font-size: 10px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: #fff;
+        align-items: center;
+        width: fit-content;
+    }
+    
+    .project-Tags img{
+        height: 20px;
+        width: 30px;
+        margin-right: 10px;
+        pointer-events: none;
+    }
+    
+    .project-Details{
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        position: absolute;
+        right: 2rem;
+        bottom: 4rem;
+        font-size: 12px;
+        padding-inline: 1rem;
+        padding-block: 2rem;
+        border-radius: 1rem;
+        color: #f5f5f5;
+        text-decoration: none;
+    }
+    
+    .project-Links{
+        display: flex;
+        text-decoration: none;
+        color: #fff;
+        background-color: #626262;
+        border-radius: 20px;
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+        align-items: center;
+        height: 40px;
+        cursor: pointer;
+        justify-content: center;
+    }
+    
+    .project-Links img{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
 }
 
 
-
-@media (min-width: 200px) and (max-width: 1280px) {
-    
-}
-
-@media (min-width:360px) and (max-width: 414px){
+@media (min-width:360px) and (max-width: 500px){
     .project-Container{
         width: 100%;
         height: 200px;
+        border-radius: 10px;
+        position:relative;
     }
+    
 
     .project-Info{
         padding: 1rem;
@@ -228,6 +375,7 @@
         height: 30px;
         cursor: pointer;
         font-size: 8px;
+        justify-content: center;
     }
     
     .project-Links img{

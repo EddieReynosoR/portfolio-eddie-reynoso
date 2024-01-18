@@ -1,5 +1,5 @@
 import { forwardRef } from 'react'
-import { useSections } from '../hooks/useSections'
+import { useSections } from '../../hooks/useSections'
 import styles from './Certification.module.css'
 
 export const Certifications = forwardRef((props, ref) => {
@@ -15,7 +15,7 @@ export const Certifications = forwardRef((props, ref) => {
                         <div>
                             <a className={styles['article-TitleAnchor']} href="">
                                 <span>Full-Stack Developer</span>
-                                <img className={styles['image-Link']} src="./link.svg" alt="link" />
+                                <img className={styles['image-Link']} src="./images/link.svg" alt="link" />
                             </a>
                         </div>
                         <div>

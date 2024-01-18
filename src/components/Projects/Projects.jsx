@@ -6,7 +6,7 @@ const projects = [
     {
         name: 'BeSporty',
         description: 'Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti.',
-        image: './943shots_so.webp',
+        image: './images/943shots_so.webp',
         technologies: [
             {
                 name: 'Django',
@@ -26,15 +26,15 @@ const projects = [
     {
         name: 'Kemish Music',
         description: 'Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti.',
-        image: './kemishMusic.webp',
+        image: './images/kemishMusic.webp',
         technologies: [
             {
                 name: 'C# Winforms',
-                color: '#005b11'
+                color: '#684D9'
             },
             {
                 name: 'SQL Server',
-                color: '#008bb9'
+                color: '#ED1C24'
             }
         ],
         isDeployed: false
