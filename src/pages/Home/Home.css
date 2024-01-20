@@ -14,12 +14,14 @@
 
 }
 .homeContainer {
-    max-width: 100%;
-    min-height: 628px;
-    top: 120px;
+    top: calc((8.1 * 1vmax) - (1vmax*0.01422));
     left: 0px;
+    display: flex;
+    justify-content: center;
     position: sticky;
-    width: 100%;
+    width: auto;
+    height: 100vh;
+    align-self: stretch;
 }
 
 .homeContainer .homeTitle{
@@ -27,6 +29,7 @@
     margin-right: 60px;
     height: 100%;
     position: sticky;
+    max-width: 80%;
 }
 
 .buttons-Container{
@@ -171,6 +174,22 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 2.1px;
+}
+
+@media (min-width:1600px){
+    .homeTitle{
+        margin-top: 18vh;
+    }
+    .buttons-Container{
+        margin-top: 20vh;
+        width: 80%;
+    }
+}
+
+@media (min-width:1730px){
+    .buttons-Container{
+        width: 100%;
+    }
 }
 
 @media (min-width:414px) and (max-width: 1280px){

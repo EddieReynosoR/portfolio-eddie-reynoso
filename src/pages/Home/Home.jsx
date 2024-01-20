@@ -12,7 +12,7 @@ export const Home = () => {
             id="headerTitle"
             className='homeTitle'>
                 <div className='developerContainer'>
-                    <h1 className='h1Developer1'>FULL-STACK</h1>
+                    <h1 className='h1Developer1'>SOFTWARE</h1>
                     <h1 className='h1Full'>EDDIE REYNOSO</h1>
                     <h1 className='h1Developer2'>DEVELOPER</h1>
                 </div>

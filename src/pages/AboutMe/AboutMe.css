@@ -1,25 +1,34 @@
-
-.AboutMe-Container{
-
-    height: 105vh;
-    --l_display: unset;
-    min-height: 70vh;
+.Container{
+    height: 800px;
+    min-height: 0px;
     min-width: 0px;
     max-width: 99999px;
     max-height: 99999px;
     align-self: stretch;
-    justify-content: stretch;
     position:relative;
     padding-top: 30px;
-
+    top:0;
     background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AboutMe-Container{
 
-    top: 100px;
+    height: 100%;
+    min-height: 0px;
+    min-width: 0px;
+    max-width: 99999px;
+    max-height: 99999px;
+    position:relative;
+    padding-top: 30px;
+    background: #ffffff;
+    top: 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 5vh;
+    grid-row-gap: 5vh;
 }
 
 .AboutMe-Text p{    
@@ -32,7 +41,7 @@
 }
 
 .div1 { 
-    grid-area: 1 / 1 / 4 / 3;
+    grid-area: 2 / 1 / 3 / 3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +87,7 @@
     width: 90%;
 }
 .div3 { 
-    grid-area: 5 / 3 / 6 / 6; 
+    grid-area: 4 / 3 / 6 / 6; 
     padding-top: 20px;
 }
 
@@ -112,6 +121,8 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); */
 }
+
+
 
 @media (min-width:601px) and (max-width: 920px){
 
