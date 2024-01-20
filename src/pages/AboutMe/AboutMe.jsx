@@ -46,11 +46,14 @@ export const AboutMe = () => {
                 className='div3'>
                     <section>
                         <ul className='social-Icons'>
-                            <li><a href="https://github.com/EddieReynosoR" target='_blank' title='Github'><img src="./images/github.svg" alt="Logo" /></a></li>
+                            <li><a href="https://github.com/EddieReynosoR" target='_blank' title='Github'><img src="./images/github-white.svg" alt="Logo" /></a></li>
                             <li><a href="https://www.linkedin.com/in/eduardo-reynoso-rosales-8a9590280/" target='_blank' title='Linkedin'><img src="./images/linkedin.svg" alt="Logo" /></a></li>
                         </ul>
                     </section>
                 </motion.div>
+            </div>
+
+            <div className="divider-Container">
             </div>
         </section>
     )
