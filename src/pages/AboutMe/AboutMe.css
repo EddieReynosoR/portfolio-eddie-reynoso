@@ -40,7 +40,7 @@
     background: linear-gradient(to right bottom, #ffffff00 50%, #ffffff 50%);
     position: relative;
     width: 100%;
-    bottom: 0;
+    margin-bottom: 0;
 }
 
 .AboutMe-Text p{    
