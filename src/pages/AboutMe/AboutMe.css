@@ -36,9 +36,11 @@
 }
 
 .divider-Container {
-    height: 200px;
+    min-height: 100px;
+    height: 100px;
     background: linear-gradient(to right bottom, #ffffff00 50%, #ffffff 50%);
     position: relative;
+    top: 0;
     width: 100%;
     margin-bottom: 0;
 }
