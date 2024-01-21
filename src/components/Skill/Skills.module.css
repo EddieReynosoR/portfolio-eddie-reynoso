@@ -37,4 +37,9 @@ div img{
     .div3 { grid-area: 1 / 3 / 2 / 4; }
     .div4 { grid-area: 2 / 1 / 2 / 5; }
     .div5 { grid-area: 2 / 2 / 2 / 6; }
+
+    div img{
+        height: 60px;
+        width: 60px;
+    }
 }

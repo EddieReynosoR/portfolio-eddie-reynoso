@@ -14,7 +14,7 @@
 
 }
 .homeContainer {
-    top: calc((8.1 * 1vmax) - (1vmax*0.01422));
+    top: calc((7.1 * 1vmax) - (1vmax*0.01422));
     left: 0px;
     display: flex;
     justify-content: center;
@@ -197,7 +197,7 @@
     .homeContainer {
         max-width: 100%;
         min-height: 628px;
-        top: 120px;
+        top: 190px;
         left: 0px;
         position: sticky;
         width: 100%;
@@ -355,7 +355,7 @@
     }
 }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 500px) {
     .homeContainer {
         max-width: 100%;
         min-height: 628px;
@@ -442,6 +442,7 @@
         font-size: 150px;
         text-align: center;
         width: fit-content;
+        letter-spacing: 8px;
     }
     
     .h1Developer1 {

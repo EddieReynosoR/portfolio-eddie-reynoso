@@ -53,8 +53,7 @@ export const AboutMe = () => {
                 </motion.div>
             </div>
 
-            <div className="divider-Container">
-            </div>
+            <div className="divider-Container"></div>
         </section>
     )
 }

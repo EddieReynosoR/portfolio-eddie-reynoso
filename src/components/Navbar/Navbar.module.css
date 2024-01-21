@@ -75,7 +75,7 @@
 
 @media (min-width: 200px) and (max-width: 1280px) {
     .navBarP{
-        font-size: calc((2.1 * 1vmax) - (12px*0.01422)); 
+        font-size: calc((1.8 * 1vmax) - (12px*0.01422)); 
     }
     .navBarPAnchor{
         text-decoration: none;
