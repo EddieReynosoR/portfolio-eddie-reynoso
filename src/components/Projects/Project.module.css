@@ -291,7 +291,7 @@
 }
 
 
-@media (min-width:360px) and (max-width: 500px){
+@media screen and (max-width: 500px){
     .project-Container{
         width: 100%;
         height: 200px;

@@ -1,5 +1,6 @@
 import {motion} from 'framer-motion'
 import styles from './Project.module.css'
+import { Link } from 'react-router-dom'
 
 export const Project = ({name, description, technologies, image, isDeployed, ...rest}) => {
     return (
@@ -27,7 +28,7 @@ export const Project = ({name, description, technologies, image, isDeployed, ...
                 <div className={styles['project-Details']}>
                     {isDeployed ? <a href="/" className={styles['project-Links']}>Check Website</a> : <a href="/" className={styles['project-Links']}>Check video</a>}
                     <a href="/" className={styles['project-Links']}><img src="./images/github-white.svg" alt="Logo" />Github</a>
-                    <a href="/" className={styles['project-Links']}>View details</a>
+                    <Link to={`/project/${name}`} className={styles['project-Links']}>View details</Link>
                 </div>
                 
             </section>

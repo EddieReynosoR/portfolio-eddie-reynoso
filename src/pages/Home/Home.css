@@ -192,7 +192,7 @@
     }
 }
 
-@media (min-width:414px) and (max-width: 1280px){
+@media (min-width:414px) and (max-width: 1500px){
 
     .homeContainer {
         max-width: 100%;
@@ -355,7 +355,7 @@
     }
 }
 
-@media (min-width: 360px) and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .homeContainer {
         max-width: 100%;
         min-height: 628px;
@@ -519,7 +519,7 @@
 
 @media (min-width: 200px) and (max-width: 1500px) {
     .homeContainer .homeTitle p{
-        font-size: calc((2.1 * 1vmax) - (12px*0.01422));    
+        font-size: calc((1.7 * 1vh) - (12px*0.01422));    
         text-wrap: pretty;
     }
 
