@@ -536,3 +536,14 @@
     }
 
 }
+
+
+.hireMeButton, .resumeButton{
+    box-shadow: 0px 0px 0px 0px #000;
+    animation: button-translate-off .2s ease-in-out;
+}
+
+.hireMeButton:hover, .resumeButton:hover{
+    box-shadow: 5px 5px 0px 0px #000;
+    animation: button-translate-on .2s ease-in-out;
+}

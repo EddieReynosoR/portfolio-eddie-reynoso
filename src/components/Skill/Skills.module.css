@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 
-div img{
+.techLogo{
     height: 80px;
     width: 80px;
 }
@@ -38,7 +38,7 @@ div img{
     .div4 { grid-area: 2 / 1 / 2 / 5; }
     .div5 { grid-area: 2 / 2 / 2 / 6; }
 
-    div img{
+    .techLogo{
         height: 60px;
         width: 60px;
     }

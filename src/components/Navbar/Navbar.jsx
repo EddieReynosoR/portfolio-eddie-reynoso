@@ -4,15 +4,15 @@ import { NavBarItem } from './NavbarItem'
 const links = [
     {
         text: 'About me',
-        href: '#about'
+        href: '/#about'
     },
     {
         text: 'Experience',
-        href: '#expecience'
+        href: '/#expecience'
     },
     {
         text: 'Projects',
-        href: '#projects'
+        href: '/#projects'
     },
 ]
 

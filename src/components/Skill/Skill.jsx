@@ -7,7 +7,7 @@ export const Skill = ({image, index , ...rest}) => {
             {...rest}
             viewport={{once:true}}
             className={styles[`div${index+1}`]}>
-                <img src={image} alt="tech-logo" />
+                <img className={styles['techLogo']} src={image} alt="tech-logo" />
         </motion.div>
     )
 }

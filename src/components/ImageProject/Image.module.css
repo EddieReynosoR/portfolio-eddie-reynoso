@@ -1,0 +1,51 @@
+.ImageContainer{
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.2rem;
+    margin: 0;
+    cursor: pointer;
+}
+
+
+.ImageContainer img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+
+
+
+.ImageContainer:nth-child(1) {
+    grid-column-end: span 4;
+    grid-row-end: span 6;
+}
+
+.ImageContainer:nth-child(2) {
+    grid-column-end: span 3;
+    grid-row-end: span 3;
+}
+
+.ImageContainer:nth-child(3) {
+    grid-column-end: span 5;
+    grid-row-end: span 3;
+}
+
+.ImageContainer:nth-child(4) {
+    grid-column-end: span 4;
+    grid-row-end: span 3;
+}
+
+.ImageContainer:nth-child(5) {
+    grid-column-end: span 4;
+    grid-row-end: span 3;
+}
+
+
+/* @media screen and (min-width: 768px) {
+    .ImageContainer:nth-child(1), .ImageContainer:nth-child(2), .ImageContainer:nth-child(3), .ImageContainer:nth-child(4), .ImageContainer:nth-child(5) {
+        padding-left: 5vw;
+    } 
+} */

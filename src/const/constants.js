@@ -1,6 +1,7 @@
 export const projects = [
     {
         name: 'BeSporty',
+        type: 'Fullstack Web App',
         description: 'Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti.',
         image: './images/943shots_so.webp',
         technologies: [
@@ -17,10 +18,14 @@ export const projects = [
                 color: '#008bb9'
             }
         ],
-        isDeployed: true
+        isDeployed: true,
+        otherImages: [
+            
+        ]
     },
     {
         name: 'Kemish Music',
+        type: 'C# .NET Deskptop App',
         description: 'Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti.',
         image: './images/kemishMusic.webp',
         technologies: [
@@ -33,6 +38,10 @@ export const projects = [
                 color: '#ED1C24'
             }
         ],
-        isDeployed: false
+        isDeployed: false,
+        otherImages: [
+
+        ]
     }
 ]
+
