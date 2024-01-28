@@ -1,11 +1,21 @@
 import styles from './Image.module.css'
 
+import {motion} from 'framer-motion'
+import { fadeIn } from '../../animations'
+
 export const Image = (props) => {
     const {handleShow} = props
 
     return (
-    <figure className={styles['ImageContainer']} onClick={() => handleShow(props.src)}>
+    <motion.figure
+    key={props.key} 
+    className={styles['ImageContainer']} 
+    onClick={() => handleShow(props.src)}
+    variants={fadeIn(0.2)}
+    initial='hidden'
+    animate='show'
+     >
         <img src={props.src} alt="Project Image"></img>  
-    </figure>
+    </motion.figure>
     )
 }

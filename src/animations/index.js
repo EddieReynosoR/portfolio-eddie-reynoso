@@ -19,6 +19,25 @@ export const fadeIn = (delay = 0) => ({
     }
 })
 
+/** 
+ * Make component fade in from opacity 0 to opacity 1
+ * @param {number} [delay=0] - in seconds
+ * @returns {Variants} Variants
+ */
+
+export const fadeInDetails = (delay = 0) => ({
+  hidden:{
+      opacity: 0,
+  },
+  show:{
+      opacity: 1,
+      transition: {
+          type: 'spring',
+          duration: 0.3,
+          delay,
+      }
+  }
+})
 
 /**
  * Makes component slide in from given direction

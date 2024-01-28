@@ -5,7 +5,12 @@ import { Link } from "react-router-dom";
 import styles from './Details.module.css'
 import { NavDetails } from './../../components/NavBarDetails/NavDetails';
 import { Image } from './../../components/ImageProject/Image'
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+import {motion, useAnimationControls} from 'framer-motion'
+import { fadeInDetails } from "../../animations";
+
+
 
 export const Details = () => {
     const [showImage, setShowImage] = useState(false);
@@ -17,17 +22,28 @@ export const Details = () => {
 
     const actualIndex = projects.indexOf(project)
 
-
     const handleShowImage = (image) => {
         setShowImage(true);
         setPopUpImage(image)
     }
 
 
+    const control = useAnimationControls()
+
+    useEffect(()=>{
+        control.start('show')
+    }, [project])
+
+
     return (
         <>
             <main className={styles['project-Main']}>
-                <div className={styles['project-Info']}>
+                <motion.div 
+                className={styles['project-Info']}
+                variants={fadeInDetails(0.2)}
+                initial='hidden'
+                animate={control}
+                >
                     <section className={styles['project-Header']}>
                         <p className={styles['project-Type']}>{project.type}</p>
                         <h1>{project.name}</h1>
@@ -58,11 +74,13 @@ export const Details = () => {
                             </div>
                         </section>
                         <section className={styles['div3']}>
-                            <Image src='../images/943shots_so.webp' handleShow = {handleShowImage}/>
-                            <Image src='../images/kemishMusic.webp' handleShow = {handleShowImage}/>
-                            <Image src='../images/943shots_so.webp' handleShow = {handleShowImage}/>
-                            <Image src='../images/943shots_so.webp' handleShow = {handleShowImage}/>
-                            <Image src='../images/943shots_so.webp' handleShow = {handleShowImage}/>
+                            {
+                                project.images.map((imageSrc, i) => {
+                                    return (
+                                        <Image key={i} src={`../images/${imageSrc}`} handleShow = {handleShowImage}/>
+                                    )
+                                })
+                            }
                         </section>
                     </section>
                     
@@ -74,14 +92,14 @@ export const Details = () => {
                     </figure>
                     
                     <section className={styles['otherProject-buttons']}>
-                        <Link to={actualIndex !== 0 ? `/project/${projects[actualIndex-1].name}` : `/project/${projects[projects.length-1].name}`}>
+                        <Link to={actualIndex !== 0 ? `/project/${projects[actualIndex-1].name}` : `/project/${projects[projects.length-1].name}`} onClick={() => control.set('hidden')}>
                             <svg width="44" height="44" viewBox="0 0 24 24" strokeWidth="2" stroke="#000" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M15 6l-6 6l6 6"></path></svg>
                         </Link>
-                        <Link to={actualIndex !== projects.length-1 ? `/project/${projects[actualIndex+1].name}` : `/project/${projects[0].name}`}>
+                        <Link to={actualIndex !== projects.length-1 ? `/project/${projects[actualIndex+1].name}` : `/project/${projects[0].name}`} onClick={() => control.set('hidden')}>
                             <svg width="44" height="44" viewBox="0 0 24 24" strokeWidth="2" stroke="#000" fill="none" strokeLinecap="round" strokeLinejoin="round" transform="rotate(180)"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M15 6l-6 6l6 6"></path></svg>
                         </Link>
                     </section>
-                </div>
+                </motion.div>
             </main>
         </>
     )
