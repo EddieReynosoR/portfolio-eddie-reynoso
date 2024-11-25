@@ -15,13 +15,13 @@ export const Home = () => {
                     <h1 className='h1Developer1'>SOFTWARE</h1>
                     <h1 className='h1Full'>EDDIE REYNOSO</h1>
                     <h1 className='h1Developer2'>DEVELOPER</h1>
-                </div>
-                <div className='buttons-Container'>
-                    <div className='buttons'>
-                        <p>Developer passionated about the idea of creating useful applications for the persons.</p>
-                        <div className='homeButtons'>
-                            <a href="#" className='hireMeButton' title='HireMe'><span>Hire me</span></a>
-                            <button className='resumeButton'>Resume</button>
+                    <div className='buttons-Container'>
+                        <div className='buttons'>
+                            <p>Developer passionated about the idea of creating useful applications for the persons.</p>
+                            <div className='homeButtons'>
+                                <a href="#" className='hireMeButton' title='HireMe'><span>Hire me</span></a>
+                                <button className='resumeButton'>Resume</button>
+                            </div>
                         </div>
                     </div>
                 </div>

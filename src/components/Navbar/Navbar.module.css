@@ -10,9 +10,9 @@
     padding: 20px 20px 0 33px;
     min-width: 100px;
     width: 180px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     text-align: center;
 }
 
@@ -22,11 +22,16 @@
     color: white;
 }
 
+@media screen and (max-width: 1024px){
+    .navBar{
+        display: none;
+    }
+}
+
 @media (min-width:601px) and (max-width: 1280px){
     .navBar { 
         position: sticky;
         top: 0;
-        display: flex;
         justify-content: center;
         margin-right: 0;
     }
@@ -36,7 +41,6 @@
         width: 180px;
         font-size: 22px;
         font-weight: 500;
-        font-family: Arial, Helvetica, sans-serif;
         text-align: center;
     }
     
@@ -50,22 +54,16 @@
 
 @media screen and (max-width: 601px){
     .navBar { 
-        position: sticky;
-        top: 0;
-        display: flex;
         justify-content: center;
         margin: 0;
     }
     
     .navBarP {
         padding: 20px 20px 20px 20px;
-        font-size: calc((2.1 * 1vmax) - (12px*0.01422));
         font-weight: 500;
-        font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         display: flex;
         justify-content: center;
-        max-width: 114px;
     }
     
     .navBarPAnchor{
@@ -74,13 +72,30 @@
     }
 }
 
-@media (min-width: 200px) and (max-width: 1280px) {
+@media (min-width: 200px) and (max-width: 1024px) {
+
     .navBarP{
-        font-size: calc((1.49 * 1vh) - (12px*0.01422)); 
-    }
-    .navBarPAnchor{
-        text-decoration: none;
-        color: white;
+        font-size: 15px;
     }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    .navBarP{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .navBarP{
+        font-size: 18px;
+    }
+    
+}
+
+@media (min-width: 1280px) and (max-width: 1536px) {
+    .navBarP{
+        font-size: 18px;
+    }
+    
+}
