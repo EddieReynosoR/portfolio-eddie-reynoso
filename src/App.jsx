@@ -6,8 +6,6 @@ import { Content } from "./pages/Content/Content"
 import { useEffect } from "react"
 import { useSections } from "./hooks/useSections"
 
-
-
 function App() {
   
   const { 
