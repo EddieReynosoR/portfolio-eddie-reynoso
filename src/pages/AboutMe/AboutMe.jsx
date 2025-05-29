@@ -1,4 +1,4 @@
-import { slideRight, smoothAppear } from '../../animations'
+import { slideRight, smoothAppear } from '../../utils/animations'
 import './AboutMe.css'
 import {motion} from 'framer-motion'
 

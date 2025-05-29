@@ -1,7 +1,7 @@
 import styles from './Image.module.css';
 
 import {motion} from 'framer-motion';
-import { fadeIn } from '../../animations';
+import { fadeIn } from '../../utils/animations';
 
 export const Image = (props) => {
     const {handleShow} = props;

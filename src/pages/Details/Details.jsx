@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import { projects } from "../../const/constants"
+import { projects } from "../../utils/constants"
 import { Link } from "react-router-dom";
 
 import styles from './Details.module.css'
@@ -8,7 +8,7 @@ import { Image } from './../../components/ImageProject/Image'
 import { useEffect, useState } from "react";
 
 import {motion, useAnimationControls} from 'framer-motion'
-import { fadeInDetails } from "../../animations";
+import { fadeInDetails } from "../../utils/animations";
 
 
 

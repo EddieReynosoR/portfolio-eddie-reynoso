@@ -1,16 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom/client';
+import type { Container } from 'react-dom/client';
 
-import App from './App.jsx'
-import './index.css'
+import App from './App.tsx';
+import './index.css';
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import { SectionsProvider } from './context/sections.jsx'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { SectionsProvider } from './contexts/sections.js';
 import { Details } from './pages/Details/Details.jsx';
 
-import type { Container } from 'react-dom';
+let rootElement = document.getElementById('root') as Container;
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(rootElement).render(
   <SectionsProvider>
     <Router>
       <Routes>

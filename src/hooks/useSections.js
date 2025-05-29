@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { SectionContext } from "../context/sections";
+import { SectionContext } from "../contexts/sections";
 
 export const useSections = () => {
     const context = useContext(SectionContext)

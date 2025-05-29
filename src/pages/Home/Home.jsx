@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { fadeIn } from '../../animations'
+import { fadeIn } from '../../utils/animations'
 import './Home.css'
 
 export const Home = () => {

@@ -1,9 +1,7 @@
-import { forwardRef } from 'react'
-import { useSections } from '../../hooks/useSections'
-import styles from './Certification.module.css'
+import { forwardRef } from 'react';
+import styles from './Certification.module.css';
 
 export const Certifications = forwardRef((props, ref) => {
-
     return (
         <article style={{marginBottom: 3.5 + 'em' }} ref={ref}>
             <div className={styles['article-Container']}>

@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion'
-import { slideIn } from '../../animations'
+import { slideIn } from '../../utils/animations'
 import styles from './Navbar.module.css'
 
 

@@ -2,7 +2,7 @@ import { forwardRef } from 'react'
 import styles from './Skills.module.css'
 import { Skill } from './Skill'
 import { useInView } from 'framer-motion'
-import { slideUp } from '../../animations'
+import { slideUp } from '../../utils/animations'
 
 // React JS
 // TypeScript

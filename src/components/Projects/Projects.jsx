@@ -1,7 +1,7 @@
 import { forwardRef } from 'react'
 import { Project } from './Project'
-import { projectVariants } from '../../animations'
-import { projects } from '../../const/constants'
+import { projectVariants } from '../../utils/animations'
+import { projects } from '../../utils/constants'
 
 
 export const Projects = forwardRef((props, ref) => {

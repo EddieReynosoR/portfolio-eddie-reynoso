@@ -1,4 +1,6 @@
-export const projects = [
+import { type Project } from "./types";
+
+export const projects: Project[] = [
     {
         name: 'BeSporty',
         type: 'Fullstack Web App',
@@ -25,10 +27,7 @@ export const projects = [
                 color: '#008bb9'
             }
         ],
-        isDeployed: true,
-        otherImages: [
-            
-        ]
+        isDeployed: true
     },
     {
         name: 'Kemish Music',
@@ -52,10 +51,6 @@ export const projects = [
                 color: '#ED1C24'
             }
         ],
-        isDeployed: false,
-        otherImages: [
-
-        ]
+        isDeployed: false
     }
-]
-
+];

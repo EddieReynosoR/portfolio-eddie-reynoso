@@ -1,9 +1,8 @@
 import { createContext, useRef, useState } from "react"
 
-export const SectionContext = createContext()
+export const SectionContext = createContext<object | null>(null);
 
-
-export function SectionsProvider ({children}) {
+export function SectionsProvider ({children} : {children : React.ReactNode}) {
 
     const projectRef = useRef(null)
     const skillRef = useRef(null)
