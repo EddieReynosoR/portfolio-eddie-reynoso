@@ -1,7 +1,7 @@
 import styles from './NavDetails.module.css'
 
 import { Link } from 'react-router-dom'
-export const NavDetails = ({name}) => {
+export const NavDetails = ({name} : {name: string}) => {
     return (
         <nav className={styles['NavBar-Container']}>
             <Link className={styles['NavBar-Element']} to='/'>Home</Link>

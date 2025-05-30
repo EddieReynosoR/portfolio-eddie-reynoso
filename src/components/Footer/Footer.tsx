@@ -1,4 +1,4 @@
-import './Footer.css'
+import './Footer.css';
 
 export const Footer = () => {
     return (
@@ -6,4 +6,4 @@ export const Footer = () => {
             <p>Footer</p>
         </footer>
     )
-}
+};

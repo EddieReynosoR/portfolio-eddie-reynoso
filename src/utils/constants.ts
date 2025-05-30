@@ -27,7 +27,9 @@ export const projects: Project[] = [
                 color: '#008bb9'
             }
         ],
-        isDeployed: true
+        isDeployed: true,
+        gitHubLink: "",
+        link: ""
     },
     {
         name: 'Kemish Music',
@@ -51,6 +53,8 @@ export const projects: Project[] = [
                 color: '#ED1C24'
             }
         ],
-        isDeployed: false
+        isDeployed: false,
+        gitHubLink: "",
+        link: ""
     }
 ];

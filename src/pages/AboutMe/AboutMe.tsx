@@ -1,6 +1,6 @@
-import { slideRight, smoothAppear } from '../../utils/animations'
-import './AboutMe.css'
-import {motion} from 'framer-motion'
+import { slideRight, smoothAppear } from '../../utils/animations';
+import './AboutMe.css';
+import {motion} from 'framer-motion';
 
 export const AboutMe = () => {
     return(
@@ -39,11 +39,11 @@ export const AboutMe = () => {
                     </section>
                 </motion.div>
                 <motion.div 
-                viewport={{once:true}} 
-                variants={smoothAppear({delay: 0.2})}
-                initial='hidden' 
-                whileInView='show'
-                className='div3'>
+                    viewport={{once:true}} 
+                    variants={smoothAppear({delay: 0.2})}
+                    initial='hidden' 
+                    whileInView='show'
+                    className='div3'>
                     <section>
                         <ul className='social-Icons'>
                             <li><a href="https://github.com/EddieReynosoR" target='_blank' title='Github'><img src="./images/github-white.svg" alt="Logo" /></a></li>

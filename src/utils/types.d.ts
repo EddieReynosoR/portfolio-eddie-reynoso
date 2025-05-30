@@ -11,4 +11,6 @@ export interface Project {
     images: string[];
     technologies: Technology[];
     isDeployed: boolean;
+    gitHubLink: string;
+    link: string;
 }

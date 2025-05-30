@@ -1,22 +1,30 @@
-import { createContext, useRef, useState } from "react"
+import { createContext, useRef, useState } from "react";
+import { type ReactNode, type MutableRefObject, type Dispatch, type SetStateAction } from "react";
 
-export const SectionContext = createContext<object | null>(null);
+interface SectionContextType {
+    projectRef: MutableRefObject<HTMLElement | null>;
+    skillRef: MutableRefObject<HTMLElement | null>;
+    experienceRef: MutableRefObject<HTMLElement | null>;
+    certificationRef: MutableRefObject<HTMLElement | null>;
+    closestSection: string;
+    setClosestSection: Dispatch<SetStateAction<string>>;
+}
 
-export function SectionsProvider ({children} : {children : React.ReactNode}) {
+export const SectionContext = createContext<SectionContextType | null>(null);
 
-    const projectRef = useRef(null)
-    const skillRef = useRef(null)
-    const experienceRef = useRef(null)
-    const certificationRef = useRef(null)
+export function SectionsProvider ({children} : {children : ReactNode}) {
+    const projectRef = useRef<HTMLElement | null>(null);
+    const skillRef = useRef<HTMLElement | null>(null);
+    const experienceRef = useRef<HTMLElement | null>(null);
+    const certificationRef = useRef<HTMLElement | null>(null);
 
-    const [closestSection, setClosestSection] = useState("Projects")
+    const [closestSection, setClosestSection] = useState<string>("Projects")
     return (
         <SectionContext.Provider value={{
             projectRef,
             skillRef,
             experienceRef,
             certificationRef,
-
             closestSection,
             setClosestSection
         }}>

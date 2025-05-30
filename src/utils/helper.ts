@@ -4,7 +4,7 @@
  * @returns width - Width of the breakpoint
  */
 
-export const getBreakpointsWidth = (breakpoint) => {
+export const getBreakpointsWidth = (breakpoint: string) => {
     // @ts-ignore
     return +fullConfig?.theme?.screens[breakpoint].slice(0, -2);
     // ! Property 'sm' does not exist on type 'ResolvableTo<ScreensConfig>'

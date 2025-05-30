@@ -1,17 +1,9 @@
-import styles from './Content.module.css'
+import styles from './Content.module.css';
 import { Certifications } from '../../components/Certification/Certifications';
 import { Projects } from '../../components/Projects/Projects';
 import { Skills } from '../../components/Skill/Skills';
 import { useSections } from '../../hooks/useSections';
 import { Experiences } from '../../components/Experience/Experiences';
-
-{/* <li>
-    <a href="#certifications" className={styles['headerContent-navContent-a']}>
-        <div className={styles['li-line']}></div>
-        <span style={{marginLeft:'0.5rem'}}>Certification</span>
-    </a>
-</li> */}
-
 
 const navElements = [
     {
@@ -30,7 +22,7 @@ const navElements = [
         text: "Certifications",
         link: "#certifications"
     }
-]
+];
 
 export const Content = () => {
 
@@ -88,4 +80,4 @@ export const Content = () => {
             </div>
         </section>
     )
-}
+};
