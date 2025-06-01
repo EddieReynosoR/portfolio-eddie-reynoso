@@ -42,6 +42,7 @@
     justify-content: center;
     width: fit-content;
     user-select: none;
+    margin-top: 4rem;
 }
 .buttons{
     display: flex;
@@ -70,7 +71,7 @@
 .homeContainer .homeTitle p{
     color: #FFF;
     font-family: 'DM Sans', sans-serif;
-    font-size: 20px;
+    font-size: clamp(0.75rem, 2vw, 1.25rem);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -78,7 +79,7 @@
     line-height: 30px;
     margin-bottom: 0;
     margin-top: 0;
-    max-width: 60%;
+    max-width: 90%;
 }
 
 /* .h1Name{
@@ -105,7 +106,7 @@
     height: fit-content;
     margin-bottom: 20px;
     margin-top: 20px;
-    font-size: 110px;
+    font-size: clamp(2.25rem, 8vw, 7rem);
     text-align: center;
     width: fit-content;
 }
@@ -116,7 +117,7 @@
     margin-top: 0;
     margin-bottom: 0;
     height: fit-content;
-    font-size: 60px;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     text-align: left;
 }
 
@@ -126,7 +127,7 @@
     margin-top: 0;
     margin-bottom: 0;
     height: fit-content;
-    font-size: 60px;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     text-align: right;
 }
 
@@ -153,6 +154,7 @@
     text-decoration: none;
     width: 188px;
     height: 50px;
+    margin-right: 20px;
 }
 .resumeButton { 
     width: 188px;
@@ -187,22 +189,13 @@
 }
 
 @media (min-width:1600px){
-    .buttons-Container{
-        margin-top: 10rem;
+    .buttons-Container {
         width: 100%;
-    }
-
-    .developerContainer {
-        padding-top: 10rem;
-    }
-
-    .h1Full {
-        font-size: 150px;
     }
 }
 
 
-@media (min-width:414px) and (max-width: 1024px){
+@media screen and (max-width: 1024px){
 
     .homeContainer {
         max-width: 100%;
@@ -225,6 +218,7 @@
         width: 100%;
         user-select: none;
     }
+
     .buttons{
         display: flex;
         flex-direction: column;
@@ -295,7 +289,6 @@
         margin-top: 0;
         margin-bottom: 0;
         height: fit-content;
-        font-size: 50px;
         text-align: left;
     }
     
@@ -305,7 +298,6 @@
         margin-top: 0;
         margin-bottom: 0;
         height: fit-content;
-        font-size: 50px;
         text-align: right;
     }
 
@@ -375,7 +367,6 @@
     .homeContainer .homeTitle{
         margin-left: 10px;
         margin-right: 10px;
-        height: 100%;
     }
     
     .buttons-Container{
@@ -383,6 +374,7 @@
         justify-content: center;
         width: 100%;
         user-select: none;
+        margin-top: 3rem;
     }
     
     .h1Full, .h1Developer1, .h1Developer2{
@@ -464,6 +456,7 @@
         margin-top: 10px;
         width: 400px;
         max-height: 40px;
+        justify-content: center;
     }
     
     .hireMeButton{
@@ -514,16 +507,7 @@
 }
 
 @media (min-width:200px) and (max-width:450px){
-    .h1Developer1, .h1Developer2{
-        font-size: 20px;
-    }
-
-    .h1Full{
-        font-size: 36px;
-    }
-
     .homeContainer .homeTitle p {
-        font-size: 12px;
         width: 500px;
         line-height: normal;
     }
@@ -531,130 +515,59 @@
     .buttons {
         flex-direction: column;
         align-items: center;
-        margin-top: 12vh;
         gap: 40px;
     }
 }
 
-@media (min-width: 450px) and (max-width: 640px) {
-    
-    .h1Developer1, .h1Developer2{
-        font-size: 24px;
-    }
-
-    .h1Full{
-        font-size: 50px;
-    }
-
-    
-
+@media (min-width: 450px) and (max-width: 640px) {  
     .buttons {
-        margin-top: 12vh;
         flex-direction: column;
         align-items: center;
     }
 
     .homeContainer .homeTitle p {
-        font-size: 13px;
-        width: 300px;
+        width: 400px;
         line-height: normal;
     }
 }
 
 @media (min-width: 640px) and (max-width: 900px) {
-    
-    .h1Developer1, .h1Developer2{
-        font-size: 30px;
-    }
-
-    .h1Full{
-        font-size: 60px;
-    }
-
     .buttons {
         flex-direction: column;
         align-items: center;
     }
 
     .buttons {
-        flex-direction: column;
-        margin-top: 10vh;
+        flex-direction: column;       
         align-items: center;
     }
 
     .homeContainer .homeTitle p {
-        font-size: 12px;
         line-height: normal;
     }
 }
 
 @media (min-width: 900px) and (max-width: 1200px) {
-    
-    .h1Developer1, .h1Developer2{
-        font-size: 36px;
-    }
-
-    .h1Full{
-        font-size: 90px;
-    }
-
     .buttons {
         flex-direction: column;
         align-items: center;
-        margin-top: 10vh;
-
-    }
-
-    .homeContainer .homeTitle p {
-        font-size: 18px;
     }
 }
 
 @media (min-width: 1200px) and (max-width: 1350px) {
-    
-    .h1Developer1, .h1Developer2{
-        font-size: 40px;
-    }
-
-    .h1Full{
-        font-size: 90px;
-    }
-
     .buttons {
         flex-direction: column;
         align-items: center;
     }
-
-    .homeContainer .homeTitle p {
-        font-size: 18px;
-    }
 }
 
 @media (min-width: 1350px) and (max-width: 1600px) {
-    
-    .h1Developer1, .h1Developer2{
-        font-size: 40px;
-    }
-
-    .h1Full{
-        font-size: 110px;
-    }
-
     .homeContainer { 
         top: 10px;
     }
 
     .buttons{
         justify-content: space-around;
-    }
-
-    .buttons-Container{
-        margin-top: 10vh;
-    }
-
-    .homeContainer .homeTitle p {
-        font-size: 18px;
-        max-width: 50%;
     }
 }
 
