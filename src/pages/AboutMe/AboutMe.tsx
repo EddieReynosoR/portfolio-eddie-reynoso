@@ -37,20 +37,20 @@ export const AboutMe = () => {
                             Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti. Fusce quis suscipit erat, quis sodales eros. Vestibulum ac mi sem. Donec a nulla eu lorem dignissim tincidunt nec eu augue. Etiam consequat aliquam turpis ac varius.Vivamus malesuada vel ex sit amet ultricies.
                         </p>
                     </section>
-                </motion.div>
-                <motion.div 
+                    <motion.div 
                     viewport={{once:true}} 
                     variants={smoothAppear({delay: 0.2})}
                     initial='hidden' 
                     whileInView='show'
                     className='div3'>
-                    <section>
-                        <ul className='social-Icons'>
-                            <li><a href="https://github.com/EddieReynosoR" target='_blank' title='Github'><img src="./images/github-white.svg" alt="Logo" /></a></li>
-                            <li><a href="https://www.linkedin.com/in/eduardo-reynoso-rosales-8a9590280/" target='_blank' title='Linkedin'><img src="./images/linkedin.svg" alt="Logo" /></a></li>
-                        </ul>
-                    </section>
-                </motion.div>
+                        <section>
+                            <ul className='social-Icons'>
+                                <li><a href="https://github.com/EddieReynosoR" target='_blank' title='Github'><img src="./images/github-white.svg" alt="Logo" /></a></li>
+                                <li><a href="https://www.linkedin.com/in/eduardo-reynoso-rosales-8a9590280/" target='_blank' title='Linkedin'><img src="./images/linkedin.svg" alt="Logo" /></a></li>
+                            </ul>
+                        </section>
+                    </motion.div>
+                </motion.div>              
             </div>
 
             <div className="divider-Container"></div>
