@@ -14,3 +14,11 @@ export interface Project {
     gitHubLink: string;
     link: string;
 }
+
+export interface IExperience {
+    date: string;
+    role: string;
+    company: string;
+    description: string;
+    technologies: string[];
+}

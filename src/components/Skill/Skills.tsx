@@ -41,7 +41,7 @@ export const Skills = forwardRef<HTMLElement, SkillsProps>((props, ref: Forwarde
                     whileInView='show'
                     viewport={{ once: true }}
                 />
-            ))};
+            ))}
         </article>
     );
 });

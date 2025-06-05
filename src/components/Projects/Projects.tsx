@@ -23,7 +23,7 @@ export const Projects = forwardRef<HTMLElement, ProjectsProps>((props, ref: Forw
                         whileInView='show'
                     />
                 ))
-            };
+            }
         </section>
     );
 });
