@@ -2,7 +2,11 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../../utils/animations';
 import './Home.css';
 
+import { useLanguage } from '../../contexts/LanguageContext';
+
 export const Home = () => {
+    const { translation } = useLanguage();
+
     return (
         <section className='homeContainer'>
             <motion.header 
@@ -17,10 +21,10 @@ export const Home = () => {
                     <h1 className='h1Developer2'>DEVELOPER</h1>
                     <div className='buttons-Container'>
                         <div className='buttons'>
-                            <p>Developer passionated about the idea of creating useful applications for the persons.</p>
+                            <p>{translation("homeAbout")}</p>
                             <div className='homeButtons'>
-                                <a href="#" className='hireMeButton' title='HireMe'><span>Hire me</span></a>
-                                <button className='resumeButton'>Resume</button>
+                                <a href="#" className='hireMeButton' title='HireMe'><span>{translation("contact")}</span></a>
+                                <button className='resumeButton'>{translation("cv")}</button>
                             </div>
                         </div>
                     </div>

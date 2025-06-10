@@ -17,8 +17,8 @@
 @font-face {
     font-family: 'Helvetica Neue';
     src: url('/fonts/HelveticaNeueBold.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
+    font-weight: normal;
+    font-style: bold;
     font-display: swap;
 }
 
@@ -160,20 +160,20 @@
     color: black;
     background-color: white;
     text-decoration: none;
-    width: 188px;
-    height: 50px;
+    width: clamp(9rem, 20vw, 11.75rem);
+    height: clamp(3rem, 6vw, 3.125rem);
     margin-right: 20px;
 }
 .resumeButton { 
-    width: 188px;
-    height: 50px;
+    width: clamp(9rem, 20vw, 11.75rem);
+    height: clamp(3rem, 6vw, 3.125rem);
     border-radius: 10px;
     cursor: pointer;
     background: transparent;
     border: 3px white solid;
     color: #F2F2F2;
     font-family: Arial;
-    font-size: 17px;
+    font-size: clamp(0.9rem, 2vw, 1rem);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -327,13 +327,9 @@
         color: black;
         background-color: white;
         text-decoration: none;
-        width: 150px;
-        height: 59px;
         margin-right: 12%;
     }
-    .resumeButton { 
-        width: 150px;
-        height: 59px;
+    .resumeButton {
         border-radius: 10px;
         cursor: pointer;
         background: transparent;
@@ -478,14 +474,10 @@
         color: black;
         background-color: white;
         text-decoration: none;
-        width: 120px;
-        height: 40px;
         margin-right: 12%;
     }
 
-    .resumeButton { 
-        width: 120px;
-        height: 40px;
+    .resumeButton {
         border-radius: 10px;
         cursor: pointer;
         background: transparent;

@@ -1,28 +1,28 @@
-.NavBar-Container{
+.NavBar-Container {
     display: flex;
     width: 100%;
     align-items: center;
 }
 
-.NavBar-Element{
+.NavBar-Element {
     text-decoration: none;
-    font-size: 20px;
+    font-size: clamp(1rem, 3vw, 1.25rem);
     margin-right: 20px;
     color: #000;
 }
 
-.NavBar-SVG{
+.NavBar-SVG {
     height: 1rem;
     width: 1rem;
     margin-right: 20px;
 }
 
-.Project-Name{
+.Project-Name {
     color: #000;
-    font-size: 20px;
+    font-size: clamp(1rem, 3vw, 1.25rem);
 }
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:1210px) {
     .NavBar-Container{
         justify-content: center;
     }

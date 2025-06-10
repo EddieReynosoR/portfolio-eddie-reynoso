@@ -8,7 +8,7 @@ interface SectionContextType {
     certificationRef: MutableRefObject<HTMLElement | null>;
     closestSection: string;
     setClosestSection: Dispatch<SetStateAction<string>>;
-}
+};
 
 export const SectionContext = createContext<SectionContextType | null>(null);
 
@@ -18,7 +18,8 @@ export function SectionsProvider ({children} : {children : ReactNode}) {
     const experienceRef = useRef<HTMLElement | null>(null);
     const certificationRef = useRef<HTMLElement | null>(null);
 
-    const [closestSection, setClosestSection] = useState<string>("Projects")
+    const [closestSection, setClosestSection] = useState<string>("Projects");
+    
     return (
         <SectionContext.Provider value={{
             projectRef,
@@ -30,5 +31,5 @@ export function SectionsProvider ({children} : {children : ReactNode}) {
         }}>
             {children}
         </SectionContext.Provider>
-    )
-}
+    );
+};

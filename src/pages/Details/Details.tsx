@@ -58,9 +58,11 @@ export const Details = () => {
                             </p>
                         </section>
                         <section className={styles['div2']}>
-                            <div>
-                                <h2>Tech Stack</h2>
-                                <p>Django, Javascript, HTML, CSS</p>
+                            <div className={styles['project-properties']}>
+                                <div>
+                                    <h2>Tech Stack</h2>
+                                    <p>Django, Javascript, HTML, CSS</p>
+                                </div>                               
                                 <div className={styles['projectLinks-Container']}>
                                     <a href={project.gitHubLink} target="_blank">
                                         <img src="../images/github.svg" alt="Image" />
