@@ -2,14 +2,15 @@ import { createContext, useContext, useState, ReactNode, Dispatch, SetStateActio
 import en from "../utils/languages/en.json";
 import es from "../utils/languages/es.json";
 
-const translations = {
+const languages = {
     en, es
 };
 
 interface LanguageContextType {
-    language: keyof typeof translations;
-    setLanguage: Dispatch<SetStateAction<keyof typeof translations>>;
-    translation: (key: string) => string;
+    language: keyof typeof languages;
+    setLanguage: Dispatch<SetStateAction<keyof typeof languages>>;
+    translation: (key: string) => string | string[];
+    languages: typeof languages;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -19,14 +20,14 @@ interface LanguageProviderProps {
 }
 
 export const LanguageProvider = ({ children }: LanguageProviderProps) =>  {
-    const [language, setLanguage] = useState<keyof typeof translations>("en");
+    const [language, setLanguage] = useState<keyof typeof languages>("en");
 
-    const translation = (key: string) => {
-        return (translations[language] as Record<string, string>)[key] || key;
+    const translation = (key: string): string | string[] => {
+        return (languages[language] as Record<string, string | string[]>)[key] || key;
     };
 
     return (
-        <LanguageContext.Provider value={{ language, setLanguage, translation }}>
+        <LanguageContext.Provider value={{ language, setLanguage, translation, languages }}>
             {children}
         </LanguageContext.Provider>
     );

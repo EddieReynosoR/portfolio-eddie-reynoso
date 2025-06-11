@@ -5,20 +5,26 @@ import { Skills } from '../../components/Skill/Skills';
 import { useSections } from '../../hooks/useSections';
 import { Experiences } from '../../components/Experience/Experiences';
 
+import { useLanguage } from '../../contexts/LanguageContext';
+
 const navElements = [
     {
+        key: "projects",
         text: "Projects",
         link: "#projects"
     },
     {
+        key: "skills",
         text: "Skills",
         link: "#skills"
     },
     {
+        key: "experience",
         text: "Experience",
         link: "#experience"
     },
     {
+        key: "certifications",
         text: "Certifications",
         link: "#certifications"
     }
@@ -32,8 +38,9 @@ export const Content = () => {
         experienceRef,
         certificationRef,
         closestSection
-        } = useSections()
+        } = useSections();
 
+    const { translation } = useLanguage();
 
     return (
         <section className={styles['Container-Content']}>
@@ -43,8 +50,8 @@ export const Content = () => {
                         <header className={styles['header']}>
                             <div className={styles['headerContent']}>
                                 <div className={styles['headerContent']}>
-                                    <h1 className={styles['headerContent-h1']}>My Experience & Skills</h1>
-                                    <p className={styles['headerContent-p']}>Check the projects that I’ve made, and with which technologies were created.</p>
+                                    <h1 className={styles['headerContent-h1']}>{ translation("experienceSkills") }</h1>
+                                    <p className={styles['headerContent-p']}>{ translation("projectsP") }</p>
                                     <nav className={styles['headerContent-nav']}>
                                         <ul className={styles['headerContent-navContent']}>
                                             {
@@ -54,7 +61,7 @@ export const Content = () => {
                                                         <li key={index}>
                                                             <a href={item.link} className={styles['headerContent-navContent-a']}>
                                                                 <div className={isActive ? styles['li-lineSelected'] : styles['li-line']}></div>
-                                                                <span className={isActive ? styles['li-textSelected'] : styles['li-text']}>{item.text}</span>
+                                                                <span className={isActive ? styles['li-textSelected'] : styles['li-text']}>{translation(item.key)}</span>
                                                             </a>
                                                         </li>
                                                     )
@@ -66,13 +73,13 @@ export const Content = () => {
                             </div>
                         </header>
                         <div className={styles['projectsContent']}>
-                            <h1 id='projects' className={styles['projectsTitle']}>Projects</h1>
+                            <h1 id='projects' className={styles['projectsTitle']}>{ translation("projects") }</h1>
                             <Projects ref = {projectRef}/>
-                            <h1 id='skills' className={styles['projectsTitle']}>Skills</h1>
+                            <h1 id='skills' className={styles['projectsTitle']}>{ translation("skills") }</h1>
                             <Skills ref={skillRef}/>
-                            <h1 id='experience' className={styles['projectsTitle']}>Experience</h1>
+                            <h1 id='experience' className={styles['projectsTitle']}>{ translation("experience") }</h1>
                             <Experiences ref={experienceRef}/>
-                            <h1 id='certifications' className={styles['projectsTitle']}>Certification</h1>
+                            <h1 id='certifications' className={styles['projectsTitle']}>{ translation("certifications") }</h1>
                             <Certifications ref={certificationRef}/>
                         </div>
                     </div>

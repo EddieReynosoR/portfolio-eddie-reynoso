@@ -4,5 +4,13 @@
   "projects": "Proyectos",
   "homeAbout": "Desarrollador apasionado por la idea de crear aplicaciones útiles para las personas.",
   "contact": "Contáctame",
-  "cv": "Descargar CV"
+  "cv": "Descargar CV",
+  "aboutParagraphs": [
+    "Soy un desarrollador de software apasionado por la idea de crear aplicaciones que puedan llegar a ayudar a las personas. Me motiva el poder convertir las ideas en soluciones tecnológicas que impacten positivamente en la vida de los demás.",
+    "Cuento con una gran noción de la responsabilidad y el trabajo en equipo, siempre enfocado en cumplir los objetivos que me planteo, donde hago uso de mi capacidad de análisis y resolución de problemas, lo que me permite abordar los proyectos con una visión integral y eficiente."
+  ],
+  "skills": "Habilidades",
+  "certifications": "Certificaciones",
+  "experienceSkills": "Mi Experiencia y Habilidades",
+  "projectsP": "Revisa los proyectos que he realizado y con qué tecnologías fueron creados."
 }
