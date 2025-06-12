@@ -16,6 +16,14 @@ interface Experience {
     technologies: string[];
 }
 
+interface Certification {
+    date: string;
+    title: string;
+    institution: string;
+    description: string;
+    technologies: string[];
+}
+
 const languages = {
     en, es
 };
@@ -23,7 +31,7 @@ const languages = {
 interface LanguageContextType {
     language: keyof typeof languages;
     setLanguage: Dispatch<SetStateAction<keyof typeof languages>>;
-    translation: (key: string) => string | string[] | Project[] | Experience[];
+    translation: (key: string) => string | string[] | Project[] | Experience[] | Certification[];
     languages: typeof languages;
 }
 
@@ -36,8 +44,8 @@ interface LanguageProviderProps {
 export const LanguageProvider = ({ children }: LanguageProviderProps) =>  {
     const [language, setLanguage] = useState<keyof typeof languages>("en");
 
-    const translation = (key: string): string | string[] | Project[] | Experience[] => {
-        return (languages[language] as Record<string, string | string[] | Project[] | Experience[]>)[key] || key;
+    const translation = (key: string): string | string[] | Project[] | Experience[] | Certification[] => {
+        return (languages[language] as Record<string, string | string[] | Project[] | Experience[] | Certification[]>)[key] || key;
     };
 
     return (
