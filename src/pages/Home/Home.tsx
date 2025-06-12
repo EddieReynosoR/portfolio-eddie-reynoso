@@ -21,10 +21,10 @@ export const Home = () => {
                     <h1 className='h1Developer2'>DEVELOPER</h1>
                     <div className='buttons-Container'>
                         <div className='buttons'>
-                            <p>{translation("homeAbout")}</p>
+                            <p>{ translation("homeAbout") as string }</p>
                             <div className='homeButtons'>
-                                <a href="#" className='hireMeButton' title='HireMe'><span>{translation("contact")}</span></a>
-                                <button className='resumeButton'>{translation("cv")}</button>
+                                <a href="#" className='hireMeButton' title='HireMe'><span>{translation("contact") as string}</span></a>
+                                <button className='resumeButton'>{translation("cv") as string}</button>
                             </div>
                         </div>
                     </div>

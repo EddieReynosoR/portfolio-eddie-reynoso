@@ -1,4 +1,4 @@
-import type { IExperience, Project } from "./types";
+import type { IExperience, Project, ICertification } from "./types";
 
 export const projects: Project[] = [
     {
@@ -61,17 +61,34 @@ export const projects: Project[] = [
 
 export const experiences: IExperience[] = [
     {
-        date: 'December 2022',
+        date: 'April 2025 - Present',
+        role: 'Software Developer',
+        company: 'RSI México',
+        description: 'Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti. Fusce quis suscipit erat, quis sodales eros. Vestibulum ac mi sem.',
+        technologies: ['Android', '.NET', 'Problem Solving']
+    },
+    {
+        date: 'July 2024',
+        role: 'Software Development Intern',
+        company: 'RSI México',
+        description: 'Consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.',
+        technologies: ['Java', 'C#', 'SCRUM']
+    },
+    {
+        date: 'November 2022',
         role: 'Full-Stack Developer',
-        company: 'San Diego Global Knowledge University',
+        company: 'SuperTeam Mexico',
+        description: 'Consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.',
+        technologies: ['Next JS', 'Crypto']
+    }
+]
+
+export const certifications: ICertification[] = [
+    {
+        date: 'December 2022',
+        title: 'Full-Stack Developer',
+        institution: 'San Diego Global Knowledge University',
         description: 'Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti. Fusce quis suscipit erat, quis sodales eros. Vestibulum ac mi sem.',
         technologies: ['Frontend', 'Backend', 'Software Engineering']
     },
-    {
-        date: 'January 2023',
-        role: 'Software Engineer Intern',
-        company: 'Tech Innovators Inc.',
-        description: 'Consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.',
-        technologies: ['JavaScript', 'React', 'Node.js']
-    }
 ]

@@ -208,6 +208,12 @@
     display: none;
 }
 
+.project-Title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @media (min-width: 830px) and (max-width: 1210px) {
     .project-properties {
         display: flex;
@@ -216,6 +222,11 @@
 }
 
 @media screen and (max-width: 1210px) {
+    .project-Title {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .project-Details{
         display: flex;
         flex-direction: column;

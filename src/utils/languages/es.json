@@ -12,5 +12,52 @@
   "skills": "Habilidades",
   "certifications": "Certificaciones",
   "experienceSkills": "Mi Experiencia y Habilidades",
-  "projectsP": "Revisa los proyectos que he realizado y con qué tecnologías fueron creados."
+  "projectsP": "Revisa los proyectos que he realizado y con qué tecnologías fueron creados.",
+  "techStack": "Tecnologías",
+  "projectsList": [
+    {
+      "name": "BeSporty",
+      "type": "Aplicación Web Fullstack",
+      "description": "Aplicación web para una tienda de artículos deportivos."
+    },
+    {
+      "name": "Kemish Music",
+      "type": "Aplicación de escritorio C# .NET",
+      "description": "Aplicación de escritorio para reproducción de música."
+    }
+  ],
+  "repository": "Ver repositorio",
+  "viewProject": "Ver proyecto",
+  "experienceList": [
+    {
+      "date": "Abril 2025 - Presente",
+      "role": "Desarrollador de Software",
+      "company": "RSI México",
+      "description": "Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti. Fusce quis suscipit erat, quis sodales eros. Vestibulum ac mi sem.",
+      "technologies": ["Android", ".NET", "Resolución de Problemas"]
+    },
+    {
+      "date": "Julio 2024",
+      "role": "Practicante de Desarrollo de Software",
+      "company": "RSI México",
+      "description": "Consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+      "technologies": ["Java", "C#", "SCRUM"]
+    },
+    {
+      "date": "Noviembre 2022",
+      "role": "Desarrollador Full-Stack",
+      "company": "SuperTeam México",
+      "description": "Consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+      "technologies": ["Next JS", "Crypto"]
+    }
+  ],
+  "certificationsList": [
+    {
+      "date": "Diciembre 2022",
+      "title": "Desarrollador Full-Stack",
+      "institution": "San Diego Global Knowledge University",
+      "description": "Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti. Fusce quis suscipit erat, quis sodales eros. Vestibulum ac mi sem.",
+      "technologies": ["Frontend", "Backend", "Ingeniería de Software"]
+    }
+  ]
 }

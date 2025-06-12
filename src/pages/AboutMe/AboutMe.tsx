@@ -29,7 +29,7 @@ export const AboutMe = () => {
                 whileInView='show'
                 className='div2'>
                     <header>
-                        <h1 className='aboutme'>{ translation("about") }</h1>
+                        <h1 className='aboutme'>{ translation("about") as string }</h1>
                         <h1 className='name'>Eduardo Reynoso</h1>
                     </header>
                     <section className='AboutMe-Text'>

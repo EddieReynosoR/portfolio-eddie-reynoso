@@ -12,5 +12,52 @@
   "skills": "Skills",
   "certifications": "Certifications",
   "experienceSkills": "My Experience & Skills",
-  "projectsP": "Check the projects that I've made, and with which technologies were created."
+  "projectsP": "Check out the projects I have done and with which technologies they were created.",
+  "techStack": "Tech Stack",
+  "projectsList": [
+    {
+      "name": "BeSporty",
+      "type": "Fullstack Web App",
+      "description": "Web application for a sports equipment e-commerce."
+    },
+    {
+      "name": "Kemish Music",
+      "type": "C# .NET Deskptop App",
+      "description": "Desktop application for music playback."
+    }
+  ],
+  "repository": "View repository",
+  "viewProject": "View project",
+  "experienceList": [
+    {
+      "date": "April 2025 - Present",
+      "role": "Software Developer",
+      "company": "RSI México",
+      "description": "Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti. Fusce quis suscipit erat, quis sodales eros. Vestibulum ac mi sem.",
+      "technologies": ["Android", ".NET", "Problem Solving"]
+    },
+    {
+      "date": "July 2024",
+      "role": "Software Development Intern",
+      "company": "RSI México",
+      "description": "Consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+      "technologies": ["Java", "C#", "SCRUM"]
+    },
+    {
+      "date": "November 2022",
+      "role": "Full-Stack Developer",
+      "company": "SuperTeam Mexico",
+      "description": "Consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+      "technologies": ["Next JS", "Crypto"]
+    }
+  ],
+  "certificationsList":  [
+    {
+      "date": "December 2022",
+      "title": "Full-Stack Developer",
+      "institution": "San Diego Global Knowledge University",
+      "description": "Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti. Fusce quis suscipit erat, quis sodales eros. Vestibulum ac mi sem.",
+      "technologies": ["Frontend", "Backend", "Software Engineering"]
+    }
+  ]
 }

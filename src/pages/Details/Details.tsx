@@ -10,6 +10,10 @@ import { useEffect, useState } from "react";
 import {motion, useAnimationControls, type AnimationControls} from 'framer-motion';
 import { fadeInDetails } from "../../utils/animations";
 
+import { useLanguage } from "../../contexts/LanguageContext";
+
+import { LanguageButton } from "../../components/Navbar/LanguageButton";
+
 export const Details = () => {
     const [showImage, setShowImage] = useState<boolean>(false);
     const [popUpImage, setPopUpImage] = useState<string>("943shots_so.webp");
@@ -32,7 +36,15 @@ export const Details = () => {
     }, [project, control]);
 
     if (!project) {
-        return <div>Project not found</div>;
+        return <div>Project not found</div>
+    }
+
+    const { translation, language, languages } = useLanguage();
+    
+    const projectData = languages[language].projectsList.find((item) => item.name == projectname);
+
+    if (!projectData) {
+        return <div>Project not found</div>
     }
 
     return (
@@ -44,33 +56,36 @@ export const Details = () => {
                     initial='hidden'
                     animate={control}>
                     <section className={styles['project-Header']}>
-                        <p className={styles['project-Type']}>{project.type}</p>
-                        <h1>{project.name}</h1>
+                        <p className={styles['project-Type']}>{ projectData.type }</p>
+                        <div className={styles['project-Title']}>
+                            <h1>{ project.name }</h1>
+                            <LanguageButton style={{ color: "black" }} />
+                        </div>
                         <div className={styles['navContainer']}>
-                            <NavDetails name={project.name}/>
+                            <NavDetails name={ project.name }/>
                         </div>
                     </section>
 
                     <section className={styles['project-Details']}>
                         <section className={styles['div1']}>
                             <p>
-                                Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti. Fusce quis suscipit erat, quis sodales eros. Vestibulum ac mi sem. Donec a nulla eu lorem dignissim tincidunt nec eu augue. Etiam consequat aliquam turpis ac varius.Vivamus malesuada vel ex sit amet ultricies.
+                                { projectData.description }
                             </p>
                         </section>
                         <section className={styles['div2']}>
                             <div className={styles['project-properties']}>
                                 <div>
-                                    <h2>Tech Stack</h2>
-                                    <p>Django, Javascript, HTML, CSS</p>
-                                </div>                               
+                                    <h2>{ translation("techStack") as string }</h2>
+                                    <p>{ project.technologies.map(t => t.name).join(", ") }</p>
+                                </div>
                                 <div className={styles['projectLinks-Container']}>
                                     <a href={project.gitHubLink} target="_blank">
                                         <img src="../images/github.svg" alt="Image" />
-                                        Ver repositorio
+                                        { translation("repository") as string }
                                     </a>
                                     <a href={project.link} target="_blank">
                                         <img src="../images/link.svg" alt="Image" />
-                                        Ver proyecto
+                                        { translation("viewProject") as string }
                                     </a>
                                 </div>
                             </div>

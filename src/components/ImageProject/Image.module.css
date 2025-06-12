@@ -51,5 +51,6 @@
     .ImageContainer:nth-child(4),
     .ImageContainer:nth-child(5) {
         max-width: 900px;
+        pointer-events: none;
     }
 }

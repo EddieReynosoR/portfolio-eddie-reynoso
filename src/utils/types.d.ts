@@ -22,3 +22,11 @@ export interface IExperience {
     description: string;
     technologies: string[];
 }
+
+export interface ICertification {
+    date: string;
+    title: string;
+    institution: string;
+    description: string;
+    technologies: string[];
+}
