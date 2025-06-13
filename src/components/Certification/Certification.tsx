@@ -10,7 +10,7 @@ export const Certification = ({ certification } : { certification: ICertificatio
             <div className={styles['article-Content']}>
                 <h3 className={styles['article-Titles']}>
                     <div>
-                        <a className={styles['article-TitleAnchor']} href="">
+                        <a className={styles['article-TitleAnchor']} href={certification.link} target="_blank">
                             <span>{certification.title}</span>
                             <img className={styles['image-Link']} src="./images/link.svg" alt="link" />
                         </a>

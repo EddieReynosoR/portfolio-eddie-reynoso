@@ -8,12 +8,17 @@ interface Project {
     description: string;
 }
 
-interface Experience {
-    date: string;
+type Role = {
     role: string;
+    date: string;
+    descriptions: string[];
+}
+
+interface Experience {
+    roles: Role[];
     company: string;
-    description: string;
     technologies: string[];
+    companyLogo: string;
 }
 
 interface Certification {
@@ -45,7 +50,7 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) =>  {
     const [language, setLanguage] = useState<keyof typeof languages>("en");
 
     const translation = (key: string): string | string[] | Project[] | Experience[] | Certification[] => {
-        return (languages[language] as Record<string, string | string[] | Project[] | Experience[] | Certification[]>)[key] || key;
+        return ((languages[language] as unknown) as Record<string, string | string[] | Project[] | Experience[] | Certification[]>)[key] || key;
     };
 
     return (

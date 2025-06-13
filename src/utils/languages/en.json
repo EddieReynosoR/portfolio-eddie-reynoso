@@ -30,25 +30,41 @@
   "viewProject": "View project",
   "experienceList": [
     {
-      "date": "April 2025 - Present",
-      "role": "Software Developer",
+      "roles": [
+        {
+          "role": "Software Developer",
+          "date": "April 2025 - Present",
+          "descriptions": [
+            "Led the development and integration of Android modules (Java) for the registration and retrieval of administrative data, connected to web services, improving field staff efficiency.",
+            "Improved performance, security, and scalability of ASP.NET web applications, ensuring high availability and an optimized user experience.",
+            "Automated key administrative processes through digital solutions tailored to internal needs, reducing operation times and manual errors"
+          ]
+        },
+        {
+          "role": "Software Development Intern",
+          "date": "July 2024 - April 2025",
+          "descriptions": [
+            "Provided preventive technical support and resolved issues through a ticketing system, while also designing and developing new modules and features for the company’s applications."
+          ]
+        }
+      ],
       "company": "RSI México",
-      "description": "Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti. Fusce quis suscipit erat, quis sodales eros. Vestibulum ac mi sem.",
-      "technologies": ["Android", ".NET", "Problem Solving"]
+      "technologies": ["Android", ".NET", "Problem Solving"],
+      "companyLogo": "rsi_mexico_logo.webp"
     },
     {
-      "date": "July 2024",
-      "role": "Software Development Intern",
-      "company": "RSI México",
-      "description": "Consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-      "technologies": ["Java", "C#", "SCRUM"]
-    },
-    {
-      "date": "November 2022",
-      "role": "Full-Stack Developer",
+      "roles": [
+        {
+          "role": "Full-Stack Developer in Hackathon",
+          "date": "November 2022",
+          "descriptions": [
+            "Played a key role in developing a web application project that achieved third place in a Hackathon, that was organized by SuperTeamMexico and CryptoMexico, where blockchain was the main theme. implemented the use of APIs and ensured smooth operation of the application components built with React in Next JS."
+          ]
+        }
+      ],
       "company": "SuperTeam Mexico",
-      "description": "Consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-      "technologies": ["Next JS", "Crypto"]
+      "technologies": ["Next JS", "Crypto"],
+      "companyLogo": "superteam_logo.webp"
     }
   ],
   "certificationsList":  [
@@ -57,7 +73,8 @@
       "title": "Full-Stack Developer",
       "institution": "San Diego Global Knowledge University",
       "description": "Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti. Fusce quis suscipit erat, quis sodales eros. Vestibulum ac mi sem.",
-      "technologies": ["Frontend", "Backend", "Software Engineering"]
+      "technologies": ["Frontend", "Backend", "Software Engineering"],
+      "link": "https://drive.google.com/file/d/1IrLzIND5Wz_TCVI6ZOCAV6ZFNMcTwlju/view?usp=sharing"
     }
   ]
 }

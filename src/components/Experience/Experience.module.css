@@ -1,0 +1,136 @@
+.experiencesContainer {
+    padding-top: 2.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.experience {
+    padding-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-left: 1px solid #e5e7eb;
+    border-color: #e5e7eb;
+}
+
+.experience:last-child {
+    border: none;
+    margin-bottom: 0;
+}
+
+.experienceContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 3rem;
+}
+
+.experienceImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 9999px;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-color: #d1d5db;
+}
+
+.experienceImage img {
+    width: 2rem;
+    height: 2rem;
+    max-width: 100%;
+    display: block;
+    border-radius: 3px;
+}
+
+.experienceDate {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #a3a3a3;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+.experienceTitleContainer {
+    margin: 0;
+}
+
+.experienceTitleContainer > * + * {
+  margin-top: 0;
+}
+
+.experienceTitle {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.experienceCompany {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 0.25rem 0
+}
+
+.experienceDescriptionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.experienceDescription {
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: 64px 1fr;
+    gap: 2rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #52525b;
+}
+
+.experienceDescription span {
+    display: flex;
+}
+
+.experienceDescriptionLabel {
+    color: #a3a3a3;
+    text-align: right;
+}
+
+.tech-List {
+    display: flex; 
+    margin-top: 0.5rem; 
+    flex-wrap: wrap; 
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.tech-ListItem {
+    display: flex; 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    align-items: center; 
+    font-size: 0.75rem;
+    line-height: 1rem; 
+    font-weight: 500; 
+    line-height: 1.25rem; 
+    border-radius: 20px;
+    background: #D9D9D9;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .experienceDescription {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+}

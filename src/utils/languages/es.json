@@ -30,25 +30,41 @@
   "viewProject": "Ver proyecto",
   "experienceList": [
     {
-      "date": "Abril 2025 - Presente",
-      "role": "Desarrollador de Software",
+      "roles": [
+        {
+          "role": "Desarrollador de Software",
+          "date": "Abril 2025 - Presente",
+          "descriptions": [
+            "Lideré el desarrollo e integración de módulos Android (Java) para el registro y recuperación de datos administrativos, conectados a servicios web, mejorando la eficiencia del personal de campo.",
+            "Mejoré el rendimiento, la seguridad y la escalabilidad de aplicaciones web ASP.NET, asegurando alta disponibilidad y una experiencia de usuario optimizada.",
+            "Automatizé procesos administrativos clave mediante soluciones digitales adaptadas a necesidades internas, reduciendo tiempos de operación y errores manuales"
+          ]
+        },
+        {
+          "role": "Practicante de Desarrollo de Software",
+          "date": "Julio 2024 - Abril 2025",
+          "descriptions": [
+            "Brindé soporte técnico preventivo y resolví incidencias a través de un sistema de tickets, además de diseñar y desarrollar nuevos módulos y funcionalidades para las aplicaciones de la empresa."
+          ]
+        }
+      ],
       "company": "RSI México",
-      "description": "Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti. Fusce quis suscipit erat, quis sodales eros. Vestibulum ac mi sem.",
-      "technologies": ["Android", ".NET", "Resolución de Problemas"]
+      "technologies": ["Android", ".NET", "Problem Solving"],
+      "companyLogo": "rsi_mexico_logo.webp"
     },
     {
-      "date": "Julio 2024",
-      "role": "Practicante de Desarrollo de Software",
-      "company": "RSI México",
-      "description": "Consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-      "technologies": ["Java", "C#", "SCRUM"]
-    },
-    {
-      "date": "Noviembre 2022",
-      "role": "Desarrollador Full-Stack",
+      "roles": [
+        {
+          "role": "Desarrollador Full-Stack en Hackaton",
+          "date": "Noviembre 2022",
+          "descriptions": [
+            "Desempeñé un papel clave en el desarrollo de un proyecto de aplicación web que obtuvo el tercer lugar en un Hackathon organizado por SuperTeamMexico y CryptoMexico, donde la temática principal fue blockchain. Implementé el uso de APIs y aseguré el correcto funcionamiento de los componentes de la aplicación construidos con React en Next JS."
+          ]
+        }
+      ],
       "company": "SuperTeam México",
-      "description": "Consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-      "technologies": ["Next JS", "Crypto"]
+      "technologies": ["Next JS", "Crypto"],
+      "companyLogo": "superteam_logo.webp"
     }
   ],
   "certificationsList": [
@@ -57,7 +73,8 @@
       "title": "Desarrollador Full-Stack",
       "institution": "San Diego Global Knowledge University",
       "description": "Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti. Fusce quis suscipit erat, quis sodales eros. Vestibulum ac mi sem.",
-      "technologies": ["Frontend", "Backend", "Ingeniería de Software"]
+      "technologies": ["Frontend", "Backend", "Ingeniería de Software"],
+      "link": "https://drive.google.com/file/d/1IrLzIND5Wz_TCVI6ZOCAV6ZFNMcTwlju/view?usp=sharing"
     }
   ]
 }

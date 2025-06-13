@@ -16,11 +16,14 @@ export interface Project {
 }
 
 export interface IExperience {
-    date: string;
-    role: string;
+    roles: {
+        role: string;
+        date: string;
+        descriptions: string[];
+    }[];
     company: string;
-    description: string;
     technologies: string[];
+    companyLogo: string;
 }
 
 export interface ICertification {
@@ -29,4 +32,5 @@ export interface ICertification {
     institution: string;
     description: string;
     technologies: string[];
+    link: string;
 }
