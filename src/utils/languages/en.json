@@ -18,12 +18,18 @@
     {
       "name": "BeSporty",
       "type": "Fullstack Web App",
-      "description": "Web application for a sports equipment e-commerce."
+      "description": "Web application for a sports equipment e-commerce.",
+      "descriptions": [
+        "Web application for a sports equipment e-commerce."
+      ]
     },
     {
       "name": "Kemish Music",
       "type": "C# .NET Deskptop App",
-      "description": "Desktop application for music playback."
+      "description": "Desktop application for music playback.",
+      "descriptions": [
+        "Desktop application for music playback."
+      ]
     }
   ],
   "repository": "View repository",
@@ -37,7 +43,7 @@
           "descriptions": [
             "Led the development and integration of Android modules (Java) for the registration and retrieval of administrative data, connected to web services, improving field staff efficiency.",
             "Improved performance, security, and scalability of ASP.NET web applications, ensuring high availability and an optimized user experience.",
-            "Automated key administrative processes through digital solutions tailored to internal needs, reducing operation times and manual errors"
+            "Automated key administrative processes through digital solutions tailored to internal needs, reducing operation times and manual errors."
           ]
         },
         {
@@ -76,5 +82,7 @@
       "technologies": ["Frontend", "Backend", "Software Engineering"],
       "link": "https://drive.google.com/file/d/1IrLzIND5Wz_TCVI6ZOCAV6ZFNMcTwlju/view?usp=sharing"
     }
-  ]
+  ],
+  "besporty": "Web application for a sports equipment e-commerce.",
+  "kemishmusic": "Desktop application for music playback."
 }

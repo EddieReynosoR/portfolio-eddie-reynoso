@@ -51,7 +51,7 @@
 }
 
 .experienceDate {
-    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 1vw, 1rem);
     text-transform: uppercase;
     color: #a3a3a3;
     letter-spacing: 0.1em;
@@ -67,13 +67,13 @@
 }
 
 .experienceTitle {
-    font-size: 1.125rem;
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
     font-weight: 700;
     margin: 0;
 }
 
 .experienceCompany {
-    font-size: 1rem;
+    font-size: clamp(1rem, 2vw, 1.25rem);
     font-weight: 500;
     margin: 0 0 0.25rem 0
 }
@@ -88,8 +88,8 @@
     display: grid;
     grid-auto-rows: max-content;
     grid-template-columns: 64px 1fr;
-    gap: 2rem;
-    font-size: 0.875rem;
+    gap: clamp(3rem, 2vw, 4rem);
+    font-size: clamp(0.875rem, 2vw, 1.125rem);
     font-weight: 400;
     color: #52525b;
 }

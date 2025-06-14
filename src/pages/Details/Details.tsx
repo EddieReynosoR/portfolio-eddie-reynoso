@@ -83,10 +83,12 @@ export const Details = () => {
                                         <img src="../images/github.svg" alt="Image" />
                                         { translation("repository") as string }
                                     </a>
-                                    <a href={project.link} target="_blank">
+                                    {
+                                        project.isDeployed ?? <a href={project.link} target="_blank">
                                         <img src="../images/link.svg" alt="Image" />
                                         { translation("viewProject") as string }
                                     </a>
+                                    }                                  
                                 </div>
                             </div>
                         </section>

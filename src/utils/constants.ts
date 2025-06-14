@@ -1,7 +1,8 @@
-import type { IExperience, Project, ICertification } from "./types";
+import type { Project, ICertification } from "./types";
 
 export const projects: Project[] = [
     {
+        key: "besporty",
         name: 'BeSporty',
         type: 'Fullstack Web App',
         description: 'Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti.',
@@ -27,11 +28,12 @@ export const projects: Project[] = [
                 color: '#008bb9'
             }
         ],
-        isDeployed: true,
-        gitHubLink: "",
+        isDeployed: false,
+        gitHubLink: "https://github.com/EddieReynosoR/BeSporty",
         link: ""
     },
     {
+        key: "kemishmusic",
         name: 'Kemish Music',
         type: 'C# .NET Deskptop App',
         description: 'Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti.',
@@ -54,34 +56,10 @@ export const projects: Project[] = [
             }
         ],
         isDeployed: false,
-        gitHubLink: "",
+        gitHubLink: "https://github.com/EddieReynosoR/KemishMusic",
         link: ""
     }
 ];
-
-export const experiences: IExperience[] = [
-    {
-        date: 'April 2025 - Present',
-        role: 'Software Developer',
-        company: 'RSI México',
-        description: 'Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti. Fusce quis suscipit erat, quis sodales eros. Vestibulum ac mi sem.',
-        technologies: ['Android', '.NET', 'Problem Solving']
-    },
-    {
-        date: 'July 2024',
-        role: 'Software Development Intern',
-        company: 'RSI México',
-        description: 'Consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.',
-        technologies: ['Java', 'C#', 'SCRUM']
-    },
-    {
-        date: 'November 2022',
-        role: 'Full-Stack Developer',
-        company: 'SuperTeam Mexico',
-        description: 'Consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.',
-        technologies: ['Next JS', 'Crypto']
-    }
-]
 
 export const certifications: ICertification[] = [
     {
@@ -89,6 +67,7 @@ export const certifications: ICertification[] = [
         title: 'Full-Stack Developer',
         institution: 'San Diego Global Knowledge University',
         description: 'Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti. Fusce quis suscipit erat, quis sodales eros. Vestibulum ac mi sem.',
-        technologies: ['Frontend', 'Backend', 'Software Engineering']
+        technologies: ['Frontend', 'Backend', 'Software Engineering'],
+        link: ""
     },
 ]

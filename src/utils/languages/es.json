@@ -37,7 +37,7 @@
           "descriptions": [
             "Lideré el desarrollo e integración de módulos Android (Java) para el registro y recuperación de datos administrativos, conectados a servicios web, mejorando la eficiencia del personal de campo.",
             "Mejoré el rendimiento, la seguridad y la escalabilidad de aplicaciones web ASP.NET, asegurando alta disponibilidad y una experiencia de usuario optimizada.",
-            "Automatizé procesos administrativos clave mediante soluciones digitales adaptadas a necesidades internas, reduciendo tiempos de operación y errores manuales"
+            "Automatizé procesos administrativos clave mediante soluciones digitales adaptadas a necesidades internas, reduciendo tiempos de operación y errores manuales."
           ]
         },
         {
@@ -76,5 +76,7 @@
       "technologies": ["Frontend", "Backend", "Ingeniería de Software"],
       "link": "https://drive.google.com/file/d/1IrLzIND5Wz_TCVI6ZOCAV6ZFNMcTwlju/view?usp=sharing"
     }
-  ]
+  ],
+  "besporty": "Aplicación web para un e-commerce de artículos deportivos.",
+  "kemishmusic": "Aplicación de escritorio para reproducción de música."
 }

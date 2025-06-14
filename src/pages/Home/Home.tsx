@@ -5,7 +5,7 @@ import './Home.css';
 import { useLanguage } from '../../contexts/LanguageContext';
 
 export const Home = () => {
-    const { translation } = useLanguage();
+    const { language, translation } = useLanguage();
 
     return (
         <section className='homeContainer'>
@@ -23,8 +23,23 @@ export const Home = () => {
                         <div className='buttons'>
                             <p>{ translation("homeAbout") as string }</p>
                             <div className='homeButtons'>
-                                <a href="#" className='hireMeButton' title='HireMe'><span>{translation("contact") as string}</span></a>
-                                <button className='resumeButton'>{translation("cv") as string}</button>
+                                <a href="mailto:eduardo_3reynoso@hotmail.com" className='hireMeButton' title='HireMe'><span>{translation("contact") as string}</span></a>
+                                <button
+                                className='resumeButton'
+                                onClick={() => {
+                                    const pdf = language === "es"
+                                        ? "/docs/CV Reynoso Eduardo ES.pdf"
+                                        : "/docs/CV Reynoso Eduardo EN.pdf";
+                                    const link = document.createElement('a');
+                                    link.href = pdf;
+                                    link.download = pdf.split('/').pop() || '';
+                                    document.body.appendChild(link);
+                                    link.click();
+                                    document.body.removeChild(link);
+                                }}
+                                >
+                                    {translation("cv") as string}
+                                </button>
                             </div>
                         </div>
                     </div>

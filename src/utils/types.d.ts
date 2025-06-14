@@ -4,6 +4,7 @@ export interface Technology {
 }
 
 export interface Project {
+    key: string;
     name: string;
     type: string;
     description: string;
