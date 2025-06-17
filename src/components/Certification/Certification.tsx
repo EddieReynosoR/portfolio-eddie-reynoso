@@ -19,9 +19,11 @@ export const Certification = ({ certification } : { certification: ICertificatio
                         <h4 className={styles['article-Subtitle']}>{certification.institution}</h4>
                     </div>
                 </h3>
-                <p className={styles['article-p']}>
-                    {certification.description}
-                </p>
+                {certification.description.map(d => (
+                    <p className={styles['article-p']}>
+                        {d}
+                    </p>
+                ))}
                 <ul className={styles['article-List']}>
                     {certification.technologies.map((tech, index) => (
                         <li key={index} style={{ marginRight: '0.375rem', marginTop: '0.5rem' }}>

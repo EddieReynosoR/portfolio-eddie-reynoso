@@ -31,7 +31,7 @@ export interface ICertification {
     date: string;
     title: string;
     institution: string;
-    description: string;
+    description: string[];
     technologies: string[];
     link: string;
 }

@@ -78,7 +78,11 @@
       "date": "December 2022",
       "title": "Full-Stack Developer",
       "institution": "San Diego Global Knowledge University",
-      "description": "Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti. Fusce quis suscipit erat, quis sodales eros. Vestibulum ac mi sem.",
+      "description": [
+        "As part of my training in the FSDI program, I acquired strong skills in software and web application development.",
+        "I specialized as a full-stack web developer, covering all levels of development: from the user interface (UI) and front-end, to business logic in the middle layer and back-end.",
+        "During the program, I worked with key technologies such as HTML, CSS, JavaScript, Node.js, React, ASP.NET, and Python, as well as essential tools like GitHub and agile methodologies such as Scrum and Agile."
+      ],
       "technologies": ["Frontend", "Backend", "Software Engineering"],
       "link": "https://drive.google.com/file/d/1IrLzIND5Wz_TCVI6ZOCAV6ZFNMcTwlju/view?usp=sharing"
     }
