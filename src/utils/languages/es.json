@@ -79,6 +79,18 @@
       ],
       "technologies": ["Frontend", "Backend", "Ingeniería de Software"],
       "link": "https://drive.google.com/file/d/1IrLzIND5Wz_TCVI6ZOCAV6ZFNMcTwlju/view?usp=sharing"
+    },
+    {
+      "date": "Marzo 2024",
+      "title": "Aprende Programación Backend en C# .NET",
+      "institution": "Udemy",
+      "description": [
+        "Durante el curso 'Aprende Programación Backend en C# .NET', adquirí habilidades sólidas en el desarrollo de aplicaciones backend utilizando el ecosistema de .NET.",
+        "Me enfoqué en la construcción de APIs, manejo de bases de datos, control de dependencias y arquitectura de software, aplicando principios de programación orientada a objetos en C#.",
+        "A lo largo del curso, trabajé con tecnologías clave como C#, .NET, Entity Framework, LINQ y SQL Server, además del uso de herramientas como Visual Studio y Git para el control de versiones."
+      ],
+      "technologies": ["Backend", ".NET", "Arquitectura de Software"],
+      "link": "https://drive.google.com/file/d/13CG-uaEVBxWcGZdqhML299V9JuZ_hddf/view?usp=sharing"
     }
   ],
   "besporty": "Aplicación web para un e-commerce de artículos deportivos.",
