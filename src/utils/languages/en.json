@@ -30,6 +30,14 @@
       "descriptions": [
         "Desktop application for music playback."
       ]
+    },
+    {
+      "name": "Chilango",
+      "type": "C# .NET WPF Desktop Application",
+      "description": "Desktop application for handling orders and inventory in a restaurant.",
+      "descriptions": [
+        "Desktop application for handling restaurant orders and managing inventory."
+      ]
     }
   ],
   "repository": "View repository",
@@ -100,5 +108,6 @@
     }
   ],
   "besporty": "Web application for a sports equipment e-commerce.",
-  "kemishmusic": "Desktop application for music playback."
+  "kemishmusic": "Desktop application for music playback.",
+  "chilango": "Desktop application for handling restaurant orders and managing inventory."
 }

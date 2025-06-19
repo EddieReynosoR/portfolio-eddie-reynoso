@@ -18,14 +18,14 @@ export const Experience = ({ experience } : { experience: IExperience }) => {
                                     <p className={styles2.experienceCompany}>{experience.company}</p>
                                 </div>
                                 <div className={styles2.experienceDescriptionContainer}>
-                                    <p className={styles2.experienceDescription}>
+                                    <div className={styles2.experienceDescription}>
                                         <span className={styles2.experienceDescriptionLabel}>Description: </span>
                                         <div style={{ display: 'flex', flexDirection: 'column' }}>
                                             {role.descriptions.map((desc, descIndex) => (
                                                 <span style={{ marginBottom: '0.5rem' }} key={descIndex}>{desc}</span>
                                             ))}
                                         </div>
-                                    </p>
+                                    </div>
                                 </div>
                                 <ul className={styles2['tech-List']}>
                                     {experience.technologies.map((tech, index) => (

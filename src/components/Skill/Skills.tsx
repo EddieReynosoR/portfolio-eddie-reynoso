@@ -24,6 +24,21 @@ const skills: SkillItem[] = [
     {
         image: './images/typescript.svg'
     },
+    {
+        image: './images/java.svg'
+    },
+    {
+        image: './images/android.svg'
+    },
+    {
+        image: './images/dotnet.svg'
+    },
+    {
+        image: './images/spring.svg'
+    },
+    {
+        image: './images/angular.svg'
+    }
 ];
 
 type SkillsProps = HTMLAttributes<HTMLElement>

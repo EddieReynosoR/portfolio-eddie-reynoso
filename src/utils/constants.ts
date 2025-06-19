@@ -58,6 +58,33 @@ export const projects: Project[] = [
         isDeployed: false,
         gitHubLink: "https://github.com/EddieReynosoR/KemishMusic",
         link: ""
+    },
+    {
+        key: "chilango",
+        name: 'Chilango',
+        type: 'C# .NET Deskptop App',
+        description: 'Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti.',
+        image: './images/Chilango/chilango1.webp',
+        images: [
+            'Chilango/chilango1.webp',
+            'Chilango/chilango2.webp',
+            'Chilango/chilango3.webp',
+            'Chilango/chilango4.webp',
+            'Chilango/chilango5.webp'
+        ],
+        technologies: [
+            {
+                name: 'C# WPF',
+                color: '#684D9'
+            },
+            {
+                name: 'SQL Server',
+                color: '#ED1C24'
+            }
+        ],
+        isDeployed: false,
+        gitHubLink: "https://github.com/EddieReynosoR/Chilango-Sistema-Restaurante",
+        link: ""
     }
 ];
 

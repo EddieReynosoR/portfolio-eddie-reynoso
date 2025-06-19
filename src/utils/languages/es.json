@@ -17,13 +17,27 @@
   "projectsList": [
     {
       "name": "BeSporty",
-      "type": "Aplicación Web Fullstack",
-      "description": "Aplicación web para una tienda de artículos deportivos."
+      "type": "Aplicación web Fullstack",
+      "description": "Aplicación web para una tienda de artículos deportivos.",
+      "descriptions": [
+        "Aplicación web para una tienda de artículos deportivos."
+      ]
     },
     {
       "name": "Kemish Music",
       "type": "Aplicación de escritorio C# .NET",
-      "description": "Aplicación de escritorio para reproducción de música."
+      "description": "Aplicación de escritorio para reproducción de música.",
+      "descriptions": [
+        "Aplicación de escritorio para reproducción de música."
+      ]
+    },
+    {
+      "name": "Chilango",
+      "type": "Aplicación de escritorio C# .NET WPF",
+      "description": "Aplicación de escritorio para gestionar órdenes e inventario en un restaurante.",
+      "descriptions": [
+        "Aplicación de escritorio para gestionar órdenes e inventario en un restaurante."
+      ]
     }
   ],
   "repository": "Ver repositorio",
@@ -94,5 +108,6 @@
     }
   ],
   "besporty": "Aplicación web para un e-commerce de artículos deportivos.",
-  "kemishmusic": "Aplicación de escritorio para reproducción de música."
+  "kemishmusic": "Aplicación de escritorio para reproducción de música.",
+  "chilango": "Aplicación de escritorio para gestionar órdenes e inventario en un restaurante."
 }
