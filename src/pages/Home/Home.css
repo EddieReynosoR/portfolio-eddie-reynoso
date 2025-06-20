@@ -461,6 +461,7 @@
         width: 400px;
         max-height: 40px;
         justify-content: center;
+        margin-left: 0px;
     }
     
     .hireMeButton{
