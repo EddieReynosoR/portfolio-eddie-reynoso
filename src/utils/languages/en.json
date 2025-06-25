@@ -38,6 +38,14 @@
       "descriptions": [
         "Desktop application for handling restaurant orders and managing inventory."
       ]
+    },
+    {
+      "name": "ParkMe",
+      "type": "IoT Solution",
+      "description": "ParkMe is an automated parking management system that uses a combination of sensors, RFID, and a microcontroller to monitor and control vehicle access to a parking area.",
+      "descriptions": [
+        "ParkMe is an automated parking management system that uses a combination of sensors, RFID, and a microcontroller to monitor and control vehicle access to a parking area."
+      ]
     }
   ],
   "repository": "View repository",
@@ -109,5 +117,6 @@
   ],
   "besporty": "Web application for a sports equipment e-commerce.",
   "kemishmusic": "Desktop application for music playback.",
-  "chilango": "Desktop application for handling restaurant orders and managing inventory."
+  "chilango": "Desktop application for handling restaurant orders and managing inventory.",
+  "parkme": "Automated parking management system using Arduino and Raspberry Pi."
 }

@@ -85,6 +85,37 @@ export const projects: Project[] = [
         isDeployed: false,
         gitHubLink: "https://github.com/EddieReynosoR/Chilango-Sistema-Restaurante",
         link: ""
+    },
+    {
+        key: "parkme",
+        name: 'ParkMe',
+        type: 'IoT Solution',
+        description: 'Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti.',
+        image: './images/ParkMe/parkMe1.webp',
+        images: [
+            'ParkMe/parkMe1.webp',
+            'ParkMe/parkMe2.webp',
+            'ParkMe/parkMe3.webp',
+            'ParkMe/parkMe4.webp',
+            'ParkMe/parkMe5.webp'
+        ],
+        technologies: [
+            {
+                name: 'Arduino',
+                color: '#00979D'
+            },
+            {
+                name: 'Raspberry Pi',
+                color: '#C514A'
+            },
+            {
+                name: 'Python',
+                color: '#3776AB'
+            }
+        ],
+        isDeployed: false,
+        gitHubLink: "https://github.com/EddieReynosoR/ParkeMe",
+        link: ""
     }
 ];
 
