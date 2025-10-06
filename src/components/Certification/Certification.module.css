@@ -19,6 +19,7 @@
 .article-Content{
     z-index: 10; 
 }
+
 .article-Titles{
     display: flex; 
     flex-direction: column; 
@@ -114,7 +115,7 @@
 
 @media (min-width: 1281px) { 
     .article-Container{
-        grid-template-columns: repeat(7, minmax(0, 1fr)); 
+        grid-template-columns: repeat(4, minmax(0, 1fr)); 
         gap: 10rem; 
     }
 
@@ -123,7 +124,7 @@
     }
 
     .article-Content{
-        grid-column: span 6/span 6; 
+        grid-column: span 3;
     }
 }
 
