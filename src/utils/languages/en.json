@@ -20,7 +20,7 @@
       "type": "Fullstack Web App",
       "description": "Web application for a sports equipment e-commerce.",
       "descriptions": [
-        "Web application for a sports equipment e-commerce."
+        "Fullstack web platform focused on sports e-commerce, designed for product management, catalog navigation, and an optimized user shopping experience."
       ]
     },
     {
@@ -28,7 +28,7 @@
       "type": "C# .NET Deskptop App",
       "description": "Desktop application for music playback.",
       "descriptions": [
-        "Desktop application for music playback."
+        "Desktop application developed in C# .NET for music playback and management, allowing users to organize music libraries and control playback through an intuitive interface."
       ]
     },
     {
@@ -36,7 +36,7 @@
       "type": "C# .NET WPF Desktop Application",
       "description": "Desktop application for handling orders and inventory in a restaurant.",
       "descriptions": [
-        "Desktop application for handling restaurant orders and managing inventory."
+        "Desktop system developed in C# .NET WPF for managing orders and inventory in restaurants, streamlining daily operations and product control."
       ]
     },
     {

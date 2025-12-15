@@ -20,7 +20,7 @@
       "type": "Aplicación web Fullstack",
       "description": "Aplicación web para una tienda de artículos deportivos.",
       "descriptions": [
-        "Aplicación web para una tienda de artículos deportivos."
+        "Plataforma web fullstack orientada al comercio electrónico de artículos deportivos, diseñada para la gestión de productos, navegación de catálogo y experiencia de compra del usuario."
       ]
     },
     {
@@ -28,7 +28,7 @@
       "type": "Aplicación de escritorio C# .NET",
       "description": "Aplicación de escritorio para reproducción de música.",
       "descriptions": [
-        "Aplicación de escritorio para reproducción de música."
+        "Aplicación de escritorio desarrollada en C# .NET para la reproducción y gestión de música, permitiendo organizar bibliotecas musicales y controlar la reproducción de manera intuitiva desde una interfaz amigable."
       ]
     },
     {
@@ -36,7 +36,7 @@
       "type": "Aplicación de escritorio C# .NET WPF",
       "description": "Aplicación de escritorio para gestionar órdenes e inventario en un restaurante.",
       "descriptions": [
-        "Aplicación de escritorio para gestionar órdenes e inventario en un restaurante."
+        "Sistema de escritorio desarrollado en C# .NET WPF para la administración de órdenes e inventario en restaurantes."
       ]
     },
     {
