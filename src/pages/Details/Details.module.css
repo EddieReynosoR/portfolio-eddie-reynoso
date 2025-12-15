@@ -61,7 +61,8 @@
 .div1 { 
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
 .div1 p{
@@ -242,6 +243,7 @@
         padding-left: 5vw;
         padding-right: 5vw;
         text-wrap: pretty;
+        align-items: center;
     }
 
     .div2{
