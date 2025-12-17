@@ -2,6 +2,72 @@ import type { Project, ICertification } from "./types";
 
 export const projects: Project[] = [
     {
+        key: "parkme",
+        name: 'ParkMe',
+        type: 'IoT Solution',
+        description: 'Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti.',
+        image: './images/ParkMe/parkMe1.webp',
+        images: [
+            'ParkMe/parkMe1.webp',
+            'ParkMe/parkMe2.webp',
+            'ParkMe/parkMe3.webp',
+            'ParkMe/parkMe4.webp',
+            'ParkMe/parkMe5.webp'
+        ],
+        technologies: [
+            {
+                name: 'Arduino',
+                color: '#00979D'
+            },
+            {
+                name: 'Raspberry Pi',
+                color: '#C514A'
+            },
+            {
+                name: 'Python',
+                color: '#3776AB'
+            }
+        ],
+        isDeployed: false,
+        gitHubLink: "https://github.com/EddieReynosoR/ParkeMe",
+        link: ""
+    },
+    {
+        key: "signlanguage",
+        name: 'Sign Language to Text',
+        type: 'Computer Vision / Machine Learning',
+        description: 'Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti.',
+        image: './images/SignLanguage/signLanguage1.webp',
+        images: [
+            'SignLanguage/signLanguage1.webp',
+            'SignLanguage/signLanguage2.webp',
+            'SignLanguage/signLanguage3.webp',
+            'SignLanguage/signLanguage4.webm',
+            'SignLanguage/signLanguage5.webp',
+        ],
+        technologies: [
+            {
+                name: 'Python',
+                color: '#3776AB',
+            },
+            {
+                name: 'OpenCV',
+                color: '#5C3EE8',
+            },
+            {
+                name: 'MediaPipe',
+                color: '#FF9800',
+            },
+            {
+                name: 'TensorFlow / Keras',
+                color: '#FF6F00',
+            }
+        ],
+        isDeployed: false,
+        gitHubLink: "https://github.com/EddieReynosoR/SignTalkModel",
+        link: ""
+    },
+    {
         key: "besporty",
         name: 'BeSporty',
         type: 'Fullstack Web App',
@@ -84,37 +150,6 @@ export const projects: Project[] = [
         ],
         isDeployed: false,
         gitHubLink: "https://github.com/EddieReynosoR/Chilango-Sistema-Restaurante",
-        link: ""
-    },
-    {
-        key: "parkme",
-        name: 'ParkMe',
-        type: 'IoT Solution',
-        description: 'Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti.',
-        image: './images/ParkMe/parkMe1.webp',
-        images: [
-            'ParkMe/parkMe1.webp',
-            'ParkMe/parkMe2.webp',
-            'ParkMe/parkMe3.webp',
-            'ParkMe/parkMe4.webp',
-            'ParkMe/parkMe5.webp'
-        ],
-        technologies: [
-            {
-                name: 'Arduino',
-                color: '#00979D'
-            },
-            {
-                name: 'Raspberry Pi',
-                color: '#C514A'
-            },
-            {
-                name: 'Python',
-                color: '#3776AB'
-            }
-        ],
-        isDeployed: false,
-        gitHubLink: "https://github.com/EddieReynosoR/ParkeMe",
         link: ""
     }
 ];

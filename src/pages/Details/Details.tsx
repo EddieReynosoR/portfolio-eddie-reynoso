@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import styles from './Details.module.css';
 import { NavDetails } from '../../components/NavBarDetails/NavDetails';
-import { Image } from '../../components/ImageProject/Image';
+import { Media } from "../../components/ImageProject/Media";
 import { useEffect, useState } from "react";
 
 import {motion, useAnimationControls, type AnimationControls} from 'framer-motion';
@@ -13,6 +13,8 @@ import { fadeInDetails } from "../../utils/animations";
 import { useLanguage } from "../../contexts/LanguageContext";
 
 import { LanguageButton } from "../../components/Navbar/LanguageButton";
+
+import { isVideo } from "../../utils/helper";
 
 export const Details = () => {
     const [showImage, setShowImage] = useState<boolean>(false);
@@ -96,18 +98,36 @@ export const Details = () => {
                             {
                                 project.images.map((imageSrc, i) => {
                                     return (
-                                        <Image key={i} src={`../images/${imageSrc}`} handleShow = {handleShowImage}/>
+                                        <Media key={i} src={`../images/${imageSrc}`} handleShow = {handleShowImage}/>
                                     );
                                 })
                             }
                         </section>
-                    </section>   
+                    </section>                       
 
-                    <figure className={`${styles.popUpImagePreview} ${showImage ? styles.displayBlock : styles.displayNone}`}>
-                        <div onClick={() => setShowImage(false)}>
-                            <img src={popUpImage} alt="PopUp Image" />
-                        </div>
-                    </figure> 
+                    <figure
+                    className={`${styles.popUpImagePreview} ${
+                        showImage ? styles.displayBlock : styles.displayNone
+                    }`}
+                    >
+                    <div onClick={() => setShowImage(false)}>
+                        {isVideo(popUpImage) ? (
+                        <video
+                            src={popUpImage}
+                            controls
+                            autoPlay
+                            muted
+                            playsInline
+                            className={styles.popUpMedia}
+                            onClick={(e) => e.stopPropagation()}
+                            controlsList="nodownload noplaybackrate noremoteplayback"
+                            disablePictureInPicture
+                        />
+                        ) : (
+                        <img src={popUpImage} alt="PopUp Media" className={styles.popUpMedia} />
+                        )}
+                    </div>
+                    </figure>
 
                     <section className={styles['otherProject-buttons']}>
                         <Link

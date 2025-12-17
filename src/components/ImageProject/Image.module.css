@@ -7,7 +7,7 @@
     display: flex;
 }
 
-.ImageContainer img{
+.ImageContainer img, .ImageContainer .Media{
     display: block;
     width: 100%;
     object-fit: cover;

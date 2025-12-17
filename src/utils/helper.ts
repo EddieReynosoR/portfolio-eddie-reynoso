@@ -16,3 +16,5 @@ export const getBreakpointsWidth = (breakpoint: string) => {
    */
   
   export const getId = () => `id${Math.random().toString(16).slice(2)}`;
+
+  export const isVideo = (src: string) => /\.(mp4|webm|mov|m4v)$/i.test(src);

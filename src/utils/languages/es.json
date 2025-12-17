@@ -16,6 +16,24 @@
   "techStack": "Tecnologías",
   "projectsList": [
     {
+      "name": "ParkMe",
+      "type": "Solución IoT",
+      "description": "ParkMe es un sistema automatizado de gestión de estacionamientos que utiliza una combinación de sensores, RFID y un microcontrolador para monitorear y controlar el acceso de vehículos a una zona de aparcamiento.",
+      "descriptions": [
+        "ParkMe es un sistema automatizado de gestión de estacionamientos que utiliza una combinación de sensores, RFID y un microcontrolador para monitorear y controlar el acceso de vehículos a una zona de aparcamiento."
+      ]
+    },
+    {
+      "name": "Sign Language to Text",
+      "type": "Computer Vision / Machine Learning",
+      "description": "Sistema de reconocimiento de lenguaje de señas que traduce gestos manuales a texto en tiempo real utilizando visión por computadora y modelos de aprendizaje automático.",
+      "descriptions": [
+        "El proyecto captura gestos de lenguaje de señas mediante una cámara y utiliza técnicas de Computer Vision para extraer puntos clave de la mano.",
+        "Los datos obtenidos son procesados con modelos de Machine Learning entrenados para reconocer secuencias de movimientos y convertirlas en texto legible.",
+        "El prototipo se planteó como una solución a la dificultad de comunicación para personas que se comunican mediante lenguaje de señas."
+      ]
+    },
+    {
       "name": "BeSporty",
       "type": "Aplicación web Fullstack",
       "description": "Aplicación web para una tienda de artículos deportivos.",
@@ -37,14 +55,6 @@
       "description": "Aplicación de escritorio para gestionar órdenes e inventario en un restaurante.",
       "descriptions": [
         "Sistema de escritorio desarrollado en C# .NET WPF para la administración de órdenes e inventario en restaurantes."
-      ]
-    },
-    {
-      "name": "ParkMe",
-      "type": "Solución IoT",
-      "description": "ParkMe es un sistema automatizado de gestión de estacionamientos que utiliza una combinación de sensores, RFID y un microcontrolador para monitorear y controlar el acceso de vehículos a una zona de aparcamiento.",
-      "descriptions": [
-        "ParkMe es un sistema automatizado de gestión de estacionamientos que utiliza una combinación de sensores, RFID y un microcontrolador para monitorear y controlar el acceso de vehículos a una zona de aparcamiento."
       ]
     }
   ],
@@ -118,5 +128,7 @@
   "besporty": "Aplicación web para un e-commerce de artículos deportivos.",
   "kemishmusic": "Aplicación de escritorio para reproducción de música.",
   "chilango": "Aplicación de escritorio para gestionar órdenes e inventario en un restaurante.",
-  "parkme": "Sistema automatizado de gestión de estacionamientos usando Arduino y Raspberry Pi."
+  "parkme": "Sistema automatizado de gestión de estacionamientos usando Arduino y Raspberry Pi.",
+  "signlanguage": "Sistema de reconocimiento de lenguaje de señas que traduce gestos manuales a texto mediante visión por computadora y aprendizaje automático."
+
 }

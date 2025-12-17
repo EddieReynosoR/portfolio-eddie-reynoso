@@ -16,6 +16,24 @@
   "techStack": "Tech Stack",
   "projectsList": [
     {
+      "name": "ParkMe",
+      "type": "Solución IoT",
+      "description": "ParkMe es un sistema automatizado de gestión de estacionamientos que utiliza una combinación de sensores, RFID y un microcontrolador para monitorear y controlar el acceso de vehículos a una zona de aparcamiento.",
+      "descriptions": [
+        "ParkMe es un sistema automatizado de gestión de estacionamientos que utiliza una combinación de sensores, RFID y un microcontrolador para monitorear y controlar el acceso de vehículos a una zona de aparcamiento."
+      ]
+    },
+    {
+      "name": "Sign Language to Text",
+      "type": "Computer Vision / Machine Learning",
+      "description": "Sign language recognition system that translates hand gestures into text in real time using computer vision and machine learning models.",
+      "descriptions": [
+        "The project captures sign language gestures through a camera and applies computer vision techniques to extract hand keypoints.",
+        "The extracted data is processed using machine learning models trained to recognize motion sequences and convert them into readable text.",
+        "The prototype was designed as a solution to address communication challenges faced by people who communicate using sign language."
+      ]
+    },
+    {
       "name": "BeSporty",
       "type": "Fullstack Web App",
       "description": "Web application for a sports equipment e-commerce.",
@@ -118,5 +136,6 @@
   "besporty": "Web application for a sports equipment e-commerce.",
   "kemishmusic": "Desktop application for music playback.",
   "chilango": "Desktop application for handling restaurant orders and managing inventory.",
-  "parkme": "Automated parking management system using Arduino and Raspberry Pi."
+  "parkme": "Automated parking management system using Arduino and Raspberry Pi.",
+  "signlanguage": "Sign language recognition system that translates hand gestures into text using computer vision and machine learning."
 }
