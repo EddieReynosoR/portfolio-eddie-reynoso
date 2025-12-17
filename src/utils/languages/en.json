@@ -17,10 +17,10 @@
   "projectsList": [
     {
       "name": "ParkMe",
-      "type": "Solución IoT",
-      "description": "ParkMe es un sistema automatizado de gestión de estacionamientos que utiliza una combinación de sensores, RFID y un microcontrolador para monitorear y controlar el acceso de vehículos a una zona de aparcamiento.",
+      "type": "IoT Solution",
+      "description": "ParkMe is an automated parking management system that uses a combination of sensors, RFID, and a microcontroller to monitor and control vehicle access to a parking area.",
       "descriptions": [
-        "ParkMe es un sistema automatizado de gestión de estacionamientos que utiliza una combinación de sensores, RFID y un microcontrolador para monitorear y controlar el acceso de vehículos a una zona de aparcamiento."
+        "ParkMe is an automated parking management system that uses a combination of sensors, RFID, and a microcontroller to monitor and control vehicle access to a parking area."
       ]
     },
     {
