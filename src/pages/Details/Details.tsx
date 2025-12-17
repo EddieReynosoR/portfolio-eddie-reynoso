@@ -70,8 +70,8 @@ export const Details = () => {
 
                     <section className={styles['project-Details']}>
                         <section className={styles['div1']}>
-                            { projectData.descriptions.map(project => {
-                                return <p>{project}</p>
+                            { projectData.descriptions.map((project, index) => {
+                                return <p key={index}>{project}</p>
                             }) }
                         </section>
                         <section className={styles['div2']}>

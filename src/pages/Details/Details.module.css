@@ -43,8 +43,8 @@
 }
 
 .navContainer{
-    margin-top: 2rem;
-    width: 100%;
+    margin: 2rem 0 0 0;
+    width: 90%;
     display: flex;
     justify-content: center;
 }
@@ -81,18 +81,19 @@
 }
 
 .div2 {
-    h2{
-        font-size: 30px;
-        margin-bottom: 10px;
-        border-top: 1px solid #000;
-        padding-top: 1rem;
-    }
+  h2 {
+    font-size: clamp(1.5rem, 2.5vw, 1.875rem);
+    margin-bottom: 10px;
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+  }
 
-    p{
-        font-size: 21px;
-        margin: 0;
-    }
+  p {
+    font-size: clamp(1.1rem, 2vw, 1.3125rem);
+    margin: 0;
+  }
 }
+
 
 .div3 { 
     grid-area: 2 / 1 / 5 / 3; 
@@ -166,7 +167,7 @@
     color: black;
     background-color: white;
     text-decoration: none;
-    width: clamp(8.5rem, 20vw, 11.75rem);
+    width: clamp(10rem, 20vw, 11.75rem);
     height: clamp(3rem, 6vw, 3.6875rem);
     margin-right: 12%;
     min-width: 145px;
@@ -220,9 +221,16 @@
         display: flex;
         align-items: end;
     }
+
+    .div3 { 
+        margin-top: 3rem;
+    }
 }
 
 @media screen and (max-width: 1210px) {
+    .projectLinks-Container {
+        justify-content: center;
+    }
     .project-Title {
         flex-direction: column;
         align-items: center;
@@ -233,6 +241,10 @@
         flex-direction: column;
         justify-content: center;
         margin-top: 10px;
+    }
+
+    .project-description {
+        margin-right: 30px;
     }
 
     .project-Header{
@@ -253,10 +265,6 @@
         width: 100%;
     }
 
-    .projectLinks-Container {
-        gap: 0;
-    }
-
     .div3{
         display: flex;
         flex-direction: column;
@@ -264,6 +272,7 @@
         margin-right: 5vw;
         justify-content: center;
         align-items: center;
+        margin-top: 2rem;
     }
 
     .otherProject-buttons a{
@@ -277,4 +286,7 @@
         width: 95%;
     }
 
+    .navContainer {
+        margin: 2rem 1rem 0 1rem;
+    }
 }
