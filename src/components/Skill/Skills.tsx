@@ -38,6 +38,15 @@ const skills: SkillItem[] = [
     },
     {
         image: './images/angular.svg'
+    },
+    {
+        image: './images/docker.svg'
+    },
+    {
+        image: './images/n8n.svg'
+    },
+    {
+        image: './images/linux.svg'
     }
 ];
 

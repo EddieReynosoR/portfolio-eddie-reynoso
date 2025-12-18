@@ -37,7 +37,7 @@
     top: 0;
     left: 0;
     background: linear-gradient(to bottom,#0000000c,#000c 95%);
-    padding: 2rem;
+    padding: 2rem 0.5rem 2rem 2rem;
     opacity: 0;
     animation: reverse-opacity .3s ease-in-out;
     animation-fill-mode: forwards;
@@ -85,13 +85,13 @@
 
 .project-Title{
     color: #fff;
-    font-size: 32px;
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
 }
 
 .project-Desc{
     line-height: 1.5rem;
     margin-top: 0.5rem;
-    font-size: 18px;
+    font-size: clamp(0.8rem, 2vw, 1.125rem);
     color: #dedede;
     width: 85%;
 }
@@ -102,6 +102,7 @@
     flex-wrap: wrap;
     list-style: none;
     gap: 0.5rem;
+    padding-left: 0;
 }
 
 .project-Tags{
@@ -154,13 +155,12 @@
         top: 0;
         left: 0;
         background: linear-gradient(to bottom,#0000000c,#000c 95%);
-        padding: 2rem 2rem 1rem 2rem;
+        padding: 2rem 2rem 3rem 2rem;
         opacity: 0;
         animation: reverse-opacity .3s ease-in-out;
         animation-fill-mode: forwards;
         width: 100%;
         font-family: 'DM Sans', sans-serif;
-        padding: 1rem;
     }
 }
 
@@ -177,13 +177,11 @@
     
     .project-Title{
         color: #fff;
-        font-size: 32px;
     }
     
     .project-Desc{
         line-height: 1.5rem;
         margin-top: 0.5rem;
-        font-size: 15px;
         color: #dedede;
         width: 75%;
         text-wrap: pretty;
@@ -235,13 +233,11 @@
 
     .project-Title{
         color: #fff;
-        font-size: 18px;
     }
     
     .project-Desc{
         line-height: 1.5rem;
         margin-top: 0.5rem;
-        font-size: 10px;
         color: #dedede;
         width: 90%;
         line-height: 15px;

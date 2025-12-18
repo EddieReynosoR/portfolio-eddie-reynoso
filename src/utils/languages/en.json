@@ -78,18 +78,19 @@
             "Led the development and integration of Android modules (Java) for the registration and retrieval of administrative data, connected to web services, improving field staff efficiency.",
             "Improved performance, security, and scalability of ASP.NET web applications, ensuring high availability and an optimized user experience.",
             "Automated key administrative processes through digital solutions tailored to internal needs, reducing operation times and manual errors."
-          ]
+          ],
+          "technologies": ["ASP.NET Core", "Docker", "Linux", "n8n", "Android"]
         },
         {
           "role": "Software Development Intern",
           "date": "July 2024 - April 2025",
           "descriptions": [
             "Provided preventive technical support and resolved issues through a ticketing system, while also designing and developing new modules and features for the company’s applications."
-          ]
+          ],
+          "technologies": ["Android", ".NET", "Problem Solving"]
         }
       ],
       "company": "RSI México",
-      "technologies": ["Android", ".NET", "Problem Solving"],
       "companyLogo": "rsi_mexico_logo.webp"
     },
     {
@@ -99,11 +100,11 @@
           "date": "November 2022",
           "descriptions": [
             "Played a key role in developing a web application project that achieved third place in a Hackathon, that was organized by SuperTeamMexico and CryptoMexico, where blockchain was the main theme. implemented the use of APIs and ensured smooth operation of the application components built with React in Next JS."
-          ]
+          ],
+          "technologies": ["Next JS", "Crypto"]
         }
       ],
       "company": "SuperTeam Mexico",
-      "technologies": ["Next JS", "Crypto"],
       "companyLogo": "superteam_logo.webp"
     }
   ],
@@ -137,5 +138,5 @@
   "kemishmusic": "Desktop application for music playback.",
   "chilango": "Desktop application for handling restaurant orders and managing inventory.",
   "parkme": "Automated parking management system using Arduino and Raspberry Pi.",
-  "signlanguage": "Sign language recognition system that translates hand gestures into text using computer vision and machine learning."
+  "signlanguage": "Sign language recognition system that translates hand gestures into text."
 }

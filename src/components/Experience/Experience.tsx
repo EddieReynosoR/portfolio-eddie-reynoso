@@ -28,7 +28,7 @@ export const Experience = ({ experience } : { experience: IExperience }) => {
                                     </div>
                                 </div>
                                 <ul className={styles2['tech-List']}>
-                                    {experience.technologies.map((tech, index) => (
+                                    {role.technologies.map((tech, index) => (
                                         <li key={index} style={{ marginRight: '0.375rem', marginTop: '0.5rem' }}>
                                             <div className={styles2['tech-ListItem']}><span>{tech}</span></div>
                                         </li>

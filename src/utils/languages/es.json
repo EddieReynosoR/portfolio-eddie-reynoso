@@ -70,18 +70,19 @@
             "Lideré el desarrollo e integración de módulos Android (Java) para el registro y recuperación de datos administrativos, conectados a servicios web, mejorando la eficiencia del personal de campo.",
             "Mejoré el rendimiento, la seguridad y la escalabilidad de aplicaciones web ASP.NET, asegurando alta disponibilidad y una experiencia de usuario optimizada.",
             "Automatizé procesos administrativos clave mediante soluciones digitales adaptadas a necesidades internas, reduciendo tiempos de operación y errores manuales."
-          ]
+          ],
+          "technologies": ["ASP.NET Core", "Docker", "Linux", "n8n"]
         },
         {
           "role": "Practicante de Desarrollo de Software",
           "date": "Julio 2024 - Abril 2025",
           "descriptions": [
             "Brindé soporte técnico preventivo y resolví incidencias a través de un sistema de tickets, además de diseñar y desarrollar nuevos módulos y funcionalidades para las aplicaciones de la empresa."
-          ]
+          ],
+          "technologies": ["Android", ".NET", "Problem Solving"]
         }
       ],
       "company": "RSI México",
-      "technologies": ["Android", ".NET", "Problem Solving"],
       "companyLogo": "rsi_mexico_logo.webp"
     },
     {
@@ -91,11 +92,11 @@
           "date": "Noviembre 2022",
           "descriptions": [
             "Desempeñé un papel clave en el desarrollo de un proyecto de aplicación web que obtuvo el tercer lugar en un Hackathon organizado por SuperTeamMexico y CryptoMexico, donde la temática principal fue blockchain. Implementé el uso de APIs y aseguré el correcto funcionamiento de los componentes de la aplicación construidos con React en Next JS."
-          ]
+          ],
+          "technologies": ["Next JS", "Crypto"]
         }
       ],
       "company": "SuperTeam México",
-      "technologies": ["Next JS", "Crypto"],
       "companyLogo": "superteam_logo.webp"
     }
   ],
@@ -129,6 +130,5 @@
   "kemishmusic": "Aplicación de escritorio para reproducción de música.",
   "chilango": "Aplicación de escritorio para gestionar órdenes e inventario en un restaurante.",
   "parkme": "Sistema automatizado de gestión de estacionamientos usando Arduino y Raspberry Pi.",
-  "signlanguage": "Sistema de reconocimiento de lenguaje de señas que traduce gestos manuales a texto mediante visión por computadora y aprendizaje automático."
-
+  "signlanguage": "Sistema de reconocimiento de lenguaje de señas a texto."
 }

@@ -21,9 +21,9 @@ export interface IExperience {
         role: string;
         date: string;
         descriptions: string[];
+        technologies: string[];
     }[];
     company: string;
-    technologies: string[];
     companyLogo: string;
 }
 

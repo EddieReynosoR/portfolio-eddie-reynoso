@@ -45,10 +45,6 @@ export const Project = ({
                             </li>
                         ))}
                     </ul>
-                    <div className={styles['project-Details']}>
-                        See details
-                        <img src="./images/linkwhite.svg" alt="linkImage" />
-                    </div>
                 </section>
             </Link>
         </motion.article>

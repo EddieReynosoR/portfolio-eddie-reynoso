@@ -75,11 +75,14 @@ export const Content = () => {
                         <div className={styles['projectsContent']}>
                             <h1 id='projects' className={styles['projectsTitle']}>{ translation("projects") as string }</h1>
                             <Projects ref = {projectRef}/>
-                            <h1 id='skills' className={styles['projectsTitle']}>{ translation("skills") as string }</h1>
+                            <div id='skills'></div>
+                            <h1 className={styles['projectsTitle']}>{ translation("skills") as string }</h1>
                             <Skills ref={skillRef}/>
-                            <h1 id='experience' className={styles['projectsTitle']}>{ translation("experience") as string }</h1>
+                            <div id='experience'></div>
+                            <h1 className={styles['projectsTitle']}>{ translation("experience") as string }</h1>
                             <Experiences ref={experienceRef}/>
-                            <h1 id='certifications' className={styles['projectsTitle']} style={{ marginTop: '0' }}>{ translation("certifications") as string }</h1>	
+                            <div id='certifications'></div>
+                            <h1 className={styles['projectsTitle']} style={{ marginTop: '0' }}>{ translation("certifications") as string }</h1>	
                             <Certifications ref={certificationRef}/>
                         </div>
                     </div>
