@@ -30,6 +30,7 @@
       "descriptions": [
         "The project captures sign language gestures through a camera and applies computer vision techniques to extract hand keypoints.",
         "The extracted data is processed using machine learning models trained to recognize motion sequences and convert them into readable text.",
+        "It connects to a lightweight frontend application through a WebSocket connection, enabling real-time, bidirectional communication for streaming data, live updates, and instant model inference.",
         "The prototype was designed as a solution to address communication challenges faced by people who communicate using sign language."
       ]
     },

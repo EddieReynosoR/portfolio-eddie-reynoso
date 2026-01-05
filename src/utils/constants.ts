@@ -41,9 +41,9 @@ export const projects: Project[] = [
         images: [
             'SignLanguage/signLanguage1.webp',
             'SignLanguage/signLanguage2.webp',
-            'SignLanguage/signLanguage3.webp',
+            'SignLanguage/signLanguage3.webm',
             'SignLanguage/signLanguage4.webm',
-            'SignLanguage/signLanguage5.webp',
+            'SignLanguage/signLanguage5.webm',
         ],
         technologies: [
             {
