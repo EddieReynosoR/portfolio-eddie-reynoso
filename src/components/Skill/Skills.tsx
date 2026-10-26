@@ -47,6 +47,9 @@ const skills: SkillItem[] = [
     },
     {
         image: './images/linux.svg'
+    },
+    {
+        image: './images/claudecode.svg'
     }
 ];
 
@@ -59,7 +62,6 @@ export const Skills = forwardRef<HTMLElement, SkillsProps>((props, ref: Forwarde
                 <Skill
                     key={index}
                     image={skill.image}
-                    index={index}
                     variants={slideUp({ delay: 0 + index / 10 })}
                     initial='hidden'
                     whileInView='show'
