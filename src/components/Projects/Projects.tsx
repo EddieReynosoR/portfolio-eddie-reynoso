@@ -18,6 +18,7 @@ export const Projects = forwardRef<HTMLElement, ProjectsProps>((props, ref: Forw
                         name={project.name}
                         description={translation(project.key) as string}
                         image={project.image}
+                        imagePosition={project.imagePosition}
                         technologies={project.technologies}
                         isDeployed={project.isDeployed}
                         variants={projectVariants}

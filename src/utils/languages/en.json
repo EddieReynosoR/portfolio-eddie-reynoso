@@ -16,6 +16,17 @@
   "techStack": "Tech Stack",
   "projectsList": [
     {
+      "name": "Nido",
+      "type": "Fullstack Web App",
+      "description": "Personal study-notes app that brings all your learning into one focused workspace.",
+      "descriptions": [
+        "Nido is a personal study-notes app that replaces notes scattered across Google Docs and Excalidraw with one focused workspace, simpler than Notion. Material is organized into spaces, each with a nested, drag-and-drop tree of color-coded topics and block-based notes with autosave, tabs and light/dark themes.",
+        "The frontend is a React 19 + TypeScript SPA built with Vite, TanStack Query, shadcn/ui and Tailwind, using BlockNote as the editor. The backend is a Spring Boot 4 REST API (Java 25) with Spring Security, Spring Data JPA and PostgreSQL 16, with the schema versioned through Flyway migrations.",
+        "Authentication uses a short-lived JWT access token kept in memory and a refresh token in an HttpOnly cookie with CSRF protection. The UI applies optimistic updates with rollback, and autosave is race-free thanks to a save queue and optimistic locking on the server that rejects stale writes.",
+        "The backend runs with Docker Compose, and a GitHub Actions pipeline builds and publishes the Docker image to GitHub Container Registry on every push, with automated Claude Code reviews on pull requests."
+      ]
+    },
+    {
       "name": "ParkMe",
       "type": "IoT Solution",
       "description": "ParkMe is an automated parking management system that uses a combination of sensors, RFID, and a microcontroller to monitor and control vehicle access to a parking area.",
@@ -73,22 +84,44 @@
     {
       "roles": [
         {
-          "role": "Software Developer",
-          "date": "April 2025 - Present",
+          "role": "Software Engineer",
+          "date": "March 2026 - Present",
           "descriptions": [
-            "Led the development and integration of Android modules (Java) for the registration and retrieval of administrative data, connected to web services, improving field staff efficiency.",
-            "Improved performance, security, and scalability of ASP.NET web applications, ensuring high availability and an optimized user experience.",
-            "Automated key administrative processes through digital solutions tailored to internal needs, reducing operation times and manual errors."
+            "Developing enterprise software features, implementing backend business logic and applying software design principles to build maintainable and scalable applications.",
+            "Leveraging AI-assisted development tools to improve development efficiency and code quality.",
+            "Working in an Agile environment as part of a hybrid, cross-functional team."
           ],
-          "technologies": ["ASP.NET Core", "Docker", "Linux", "n8n", "Android"]
+          "technologies": ["Full-Stack Development", "Agile", "AI-Assisted Development"]
+        }
+      ],
+      "company": "ITJ",
+      "companyLogo": "itj_logo.webp"
+    },
+    {
+      "roles": [
+        {
+          "role": "Software Developer",
+          "date": "April 2025 - March 2026",
+          "descriptions": [
+            "Developed full-stack web applications using C#, ASP.NET and JavaScript, building backend services and responsive user interfaces.",
+            "Built core backend modules for a field service system, including automated spare-part recommendation logic and dynamic document generation with ASP.NET Web API.",
+            "Maintained and extended RESTful APIs for data processing pipelines and third-party integrations.",
+            "Designed AI-driven automation workflows in n8n, orchestrating API integrations and LLM-based logic to streamline business operations.",
+            "Managed secure deployments on VPS with Docker Compose and automated CI/CD with Bitbucket Pipelines, Jenkins and PowerShell to deploy .NET applications to IIS.",
+            "Collaborated in a Scrum team, taking part in Sprint Planning, Daily Stand-ups, Reviews and Retrospectives."
+          ],
+          "technologies": ["C#", "ASP.NET MVC", "n8n", "Docker", "CI/CD", "Scrum"]
         },
         {
           "role": "Software Development Intern",
           "date": "July 2024 - April 2025",
           "descriptions": [
-            "Provided preventive technical support and resolved issues through a ticketing system, while also designing and developing new modules and features for the company’s applications."
+            "Optimized and maintained ASP.NET web applications and Android (Java) mobile apps, ensuring stable performance.",
+            "Developed custom web solutions with .NET, JavaScript and SQL Server to meet business needs.",
+            "Provided technical support and issue resolution through a ticketing system.",
+            "Designed and implemented new modules and features as business requirements evolved."
           ],
-          "technologies": ["Android", ".NET", "Problem Solving"]
+          "technologies": ["ASP.NET", "Android", "SQL Server", "JavaScript"]
         }
       ],
       "company": "RSI México",
@@ -111,16 +144,48 @@
   ],
   "certificationsList":  [
     {
-      "date": "December 2022",
-      "title": "Full-Stack Developer",
-      "institution": "San Diego Global Knowledge University",
+      "date": "September 2026",
+      "title": "AWS Certified AI Practitioner",
+      "institution": "Amazon Web Services (AWS)",
       "description": [
-        "As part of my training in the FSDI program, I acquired strong skills in software and web application development.",
-        "I specialized as a full-stack web developer, covering all levels of development: from the user interface (UI) and front-end, to business logic in the middle layer and back-end.",
-        "During the program, I worked with key technologies such as HTML, CSS, JavaScript, Node.js, React, ASP.NET, and Python, as well as essential tools like GitHub and agile methodologies such as Scrum and Agile."
+        "Certification that validates foundational knowledge of artificial intelligence, machine learning and generative AI concepts, as well as their real-world use cases.",
+        "Covers AWS services for building AI solutions, such as Amazon Bedrock and Amazon SageMaker, along with responsible AI, security and governance practices."
       ],
-      "technologies": ["Frontend", "Backend", "Software Engineering"],
-      "link": "https://drive.google.com/file/d/1IrLzIND5Wz_TCVI6ZOCAV6ZFNMcTwlju/view?usp=sharing"
+      "technologies": ["Cloud Computing", "AWS", "Generative AI"],
+      "link": "https://www.credly.com/badges/e6b21860-a8ca-4485-ba4a-354c1c025fea/linked_in_profile"
+    },
+    {
+      "date": "July 2026",
+      "title": "Claude Certified Architect - Foundations",
+      "institution": "Anthropic",
+      "description": [
+        "Certification that validates the ability to design and build solutions with Claude, applying prompt engineering, tool use and context management best practices.",
+        "Focused on building AI agents and integrations with the Claude API and the Claude Agent SDK."
+      ],
+      "technologies": ["Claude Agent SDK", "Anthropic Claude", "AI Agents"],
+      "link": "https://www.credly.com/badges/f04288e0-de9a-40e3-84a9-2003dc1aecdb/linked_in_profile"
+    },
+    {
+      "date": "June 2026",
+      "title": "Microsoft Certified: Azure AI Fundamentals",
+      "institution": "Microsoft",
+      "description": [
+        "Certification that validates knowledge of core machine learning and artificial intelligence concepts.",
+        "Covers Azure AI services for computer vision, natural language processing and generative AI solutions."
+      ],
+      "technologies": ["Machine Learning", "Agentic AI Development", "Azure"],
+      "link": "https://learn.microsoft.com/api/credentials/share/en-us/EduardoReynoso-1918/D17AE58FF36875C5?sharingId"
+    },
+    {
+      "date": "April 2026",
+      "title": "Spring Boot 4, Spring 7 & Hibernate for Beginners",
+      "institution": "Udemy",
+      "description": [
+        "Course focused on building Java backend applications and REST APIs with Spring Boot and Spring MVC.",
+        "Worked with data persistence using Hibernate and JPA, dependency injection and the Spring ecosystem."
+      ],
+      "technologies": ["Spring Boot", "Spring MVC", "Hibernate"],
+      "link": "https://www.udemy.com/certificate/UC-bf1f1444-0e2f-4f46-9862-8dadc32ed124/"
     },
     {
       "date": "March 2024",
@@ -133,8 +198,21 @@
       ],
       "technologies": ["Backend", ".NET", "Software Architecture"],
       "link": "https://drive.google.com/file/d/13CG-uaEVBxWcGZdqhML299V9JuZ_hddf/view?usp=sharing"
+    },
+    {
+      "date": "December 2022",
+      "title": "Full-Stack Developer",
+      "institution": "San Diego Global Knowledge University",
+      "description": [
+        "As part of my training in the FSDI program, I acquired strong skills in software and web application development.",
+        "I specialized as a full-stack web developer, covering all levels of development: from the user interface (UI) and front-end, to business logic in the middle layer and back-end.",
+        "During the program, I worked with key technologies such as HTML, CSS, JavaScript, Node.js, React, ASP.NET, and Python, as well as essential tools like GitHub and agile methodologies such as Scrum and Agile."
+      ],
+      "technologies": ["Frontend", "Backend", "Software Engineering"],
+      "link": "https://drive.google.com/file/d/1IrLzIND5Wz_TCVI6ZOCAV6ZFNMcTwlju/view?usp=sharing"
     }
   ],
+  "nido": "Personal study-notes app with spaces, topics and block-based notes.",
   "besporty": "Web application for a sports equipment e-commerce.",
   "kemishmusic": "Desktop application for music playback.",
   "chilango": "Desktop application for handling restaurant orders and managing inventory.",

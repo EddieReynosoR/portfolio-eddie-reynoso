@@ -9,6 +9,7 @@ export interface Project {
     type: string;
     description: string;
     image: string;
+    imagePosition?: string;
     images: string[];
     technologies: Technology[];
     isDeployed: boolean;

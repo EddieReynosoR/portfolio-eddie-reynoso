@@ -12,6 +12,7 @@ interface ProjectProps extends MotionProps {
     description: string;
     technologies: Technology[];
     image: string;
+    imagePosition?: string;
     isDeployed: boolean;
 }
 
@@ -20,6 +21,7 @@ export const Project = ({
     description,
     technologies,
     image,
+    imagePosition,
     isDeployed,
     ...rest
 }: ProjectProps) => {
@@ -30,7 +32,7 @@ export const Project = ({
             className={styles['project-Container']}
         >
             <Link to={`/project/${name}`}>
-                <img src={image} alt="Project image" />
+                <img src={image} alt="Project image" style={{ objectPosition: imagePosition }} />
                 <section className={styles['project-Info']}>
                     <h3 className={styles['project-Title']}>{name}</h3>
                     <p className={styles['project-Desc']}>{description}</p>

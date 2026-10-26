@@ -2,6 +2,44 @@ import type { Project, ICertification } from "./types";
 
 export const projects: Project[] = [
     {
+        key: "nido",
+        name: 'Nido',
+        type: 'Fullstack Web App',
+        description: 'Sed ut justo lectus. Aliquam condimentum risus nisl. Suspendisse potenti.',
+        image: './images/Nido/nido1.webp',
+        imagePosition: 'top left',
+        images: [
+            'Nido/nido1.webp',
+            'Nido/nido2.webp',
+            'Nido/nido3.webp'
+        ],
+        technologies: [
+            {
+                name: 'React',
+                color: '#087EA4'
+            },
+            {
+                name: 'TypeScript',
+                color: '#3178C6'
+            },
+            {
+                name: 'Spring Boot',
+                color: '#6DB33F'
+            },
+            {
+                name: 'PostgreSQL',
+                color: '#4169E1'
+            },
+            {
+                name: 'Docker',
+                color: '#2496ED'
+            }
+        ],
+        isDeployed: false,
+        gitHubLink: "https://github.com/EddieReynosoR/nido",
+        link: ""
+    },
+    {
         key: "parkme",
         name: 'ParkMe',
         type: 'IoT Solution',
