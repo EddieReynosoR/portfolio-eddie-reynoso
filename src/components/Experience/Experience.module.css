@@ -7,8 +7,8 @@
 .experience {
     padding-bottom: 2.5rem;
     padding-bottom: 2.5rem;
-    border-left: 1px solid #e5e7eb;
-    border-color: #e5e7eb;
+    border-left: 1px solid var(--border);
+    border-color: var(--border);
 }
 
 .experience:last-child {
@@ -33,13 +33,13 @@
     align-items: center;
     justify-content: center;
     transform: translateX(-50%);
-    background-color: #fff;
+    background-color: var(--bg);
     border-width: 1px;
     border-style: solid;
     border-radius: 9999px;
     width: 3.5rem;
     height: 3.5rem;
-    border-color: #d1d5db;
+    border-color: var(--border);
 }
 
 .experienceImage img {
@@ -67,12 +67,14 @@
 }
 
 .experienceTitle {
+    color: var(--text);
     font-size: clamp(1.125rem, 2vw, 1.5rem);
     font-weight: 700;
     margin: 0;
 }
 
 .experienceCompany {
+    color: var(--text);
     font-size: clamp(1rem, 2vw, 1.25rem);
     font-weight: 500;
     margin: 0 0 0.25rem 0
@@ -91,7 +93,7 @@
     gap: clamp(3rem, 2vw, 4rem);
     font-size: clamp(0.875rem, 2vw, 1.125rem);
     font-weight: 400;
-    color: #52525b;
+    color: var(--text-soft);
 }
 
 .experienceDescription span {
@@ -113,6 +115,7 @@
 }
 
 .tech-ListItem {
+    color: var(--text);
     display: flex; 
     padding-top: 0.5rem;
     padding-bottom: 0.5rem; 
@@ -124,7 +127,7 @@
     font-weight: 500; 
     line-height: 1.25rem; 
     border-radius: 20px;
-    background: #D9D9D9;
+    background: var(--chip-bg);
 }
 
 @media screen and (max-width: 768px) {

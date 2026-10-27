@@ -16,7 +16,7 @@ const skills: SkillItem[] = [
         image: './images/csharp.webp'
     },
     {
-        image: './images/sqlserver.webp'
+        image: './images/sqlserver.svg'
     },
     {
         image: './images/django.svg'

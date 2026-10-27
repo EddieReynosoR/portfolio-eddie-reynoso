@@ -8,17 +8,18 @@
     text-decoration: none;
     font-size: clamp(1rem, 3vw, 1.25rem);
     margin-right: 20px;
-    color: #000;
+    color: var(--text);
 }
 
 .NavBar-SVG {
+    color: var(--text);
     height: 1rem;
     width: 1rem;
     margin-right: 20px;
 }
 
 .Project-Name {
-    color: #000;
+    color: var(--text);
     font-size: clamp(1rem, 3vw, 1.25rem);
 }
 

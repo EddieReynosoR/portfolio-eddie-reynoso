@@ -11,10 +11,12 @@
     position:relative;
     top: 0;
 
-    background: #ffffff;
+    background: var(--bg);
+    transition: background-color .3s ease, color .3s ease;
 }
 .Projects-Container{
-    background: #ffffff;
+    background: var(--bg);
+    transition: background-color .3s ease, color .3s ease;
 
     top: 0;
     display: flex;
@@ -26,7 +28,7 @@
 }
 
 .projectsTitle{
-    color: #000;
+    color: var(--text);
     font-family: 'DM Sans', sans-serif;
     font-size: clamp(1.5rem, 4vw, 2.25rem);
     font-style: normal;
@@ -73,7 +75,7 @@
 }
 
 .headerContent-h1 {
-    color: #000;
+    color: var(--text);
     font-family: 'DM Sans', sans-serif;
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-style: normal;
@@ -83,7 +85,7 @@
 }
 
 .headerContent-p{
-    color: #000;
+    color: var(--text);
     font-family: 'DM Sans', sans-serif;
     font-size: clamp(0.9rem, 2vw, 1.25rem);
     font-style: normal;
@@ -116,7 +118,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms; 
     text-decoration: none;
-    color: #000;
+    color: var(--text);
     font-family: 'DM Sans', sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -132,7 +134,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms; 
     height: 4px;
-    background-color: #000;
+    background-color: var(--text);
     opacity: .5;
     margin-right: 10px;
 }
@@ -143,7 +145,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms; 
     height: 4px;
-    background-color: #000;
+    background-color: var(--text);
     margin-right: 10px;
 }
 
@@ -179,7 +181,7 @@
 }
 
 .test{
-    border: 3px solid black;
+    border: 3px solid var(--text);
     min-height: 800px;
     min-width: 200px;
 }
@@ -213,7 +215,8 @@
         justify-content: stretch;
         position:relative;
 
-        background: #ffffff;
+        background: var(--bg);
+    transition: background-color .3s ease, color .3s ease;
 
         top: 0;
         display: flex;
@@ -253,7 +256,8 @@
         justify-content: stretch;
         position:relative;
 
-        background: #ffffff;
+        background: var(--bg);
+    transition: background-color .3s ease, color .3s ease;
 
         top: 0;
         display: flex;

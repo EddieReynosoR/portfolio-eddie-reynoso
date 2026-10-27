@@ -1,0 +1,16 @@
+.themeButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 0;
+    padding: 0 10px;
+    color: white;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.themeButton svg {
+    width: clamp(1.1rem, 2vw, 1.4rem);
+    height: clamp(1.1rem, 2vw, 1.4rem);
+}

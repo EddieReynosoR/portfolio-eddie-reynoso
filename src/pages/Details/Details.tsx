@@ -13,6 +13,7 @@ import { fadeInDetails } from "../../utils/animations";
 import { useLanguage } from "../../contexts/LanguageContext";
 
 import { LanguageButton } from "../../components/Navbar/LanguageButton";
+import { ThemeButton } from "../../components/Navbar/ThemeButton";
 
 import { isVideo } from "../../utils/helper";
 
@@ -61,7 +62,10 @@ export const Details = () => {
                         <p className={styles['project-Type']}>{ projectData.type }</p>
                         <div className={styles['project-Title']}>
                             <h1>{ project.name }</h1>
-                            <LanguageButton style={{ color: "black" }} />
+                            <div className={styles['title-Actions']}>
+                                <LanguageButton style={{ color: "var(--text)" }} />
+                                <ThemeButton style={{ color: "var(--text)" }} />
+                            </div>
                         </div>
                         <div className={styles['navContainer']}>
                             <NavDetails name={ project.name }/>
@@ -138,7 +142,7 @@ export const Details = () => {
                             }
                             onClick={() => control.set('hidden')}
                         >
-                            <svg width="44" height="44" viewBox="0 0 24 24" strokeWidth="2" stroke="#000" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M15 6l-6 6l6 6"></path></svg>
+                            <svg width="44" height="44" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M15 6l-6 6l6 6"></path></svg>
                         </Link>
                         <Link
                             to={
@@ -148,7 +152,7 @@ export const Details = () => {
                             }
                             onClick={() => control.set('hidden')}
                         >
-                            <svg width="44" height="44" viewBox="0 0 24 24" strokeWidth="2" stroke="#000" fill="none" strokeLinecap="round" strokeLinejoin="round" transform="rotate(180)"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M15 6l-6 6l6 6"></path></svg>
+                            <svg width="44" height="44" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" transform="rotate(180)"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M15 6l-6 6l6 6"></path></svg>
                         </Link>
                     </section>
                 </motion.div>

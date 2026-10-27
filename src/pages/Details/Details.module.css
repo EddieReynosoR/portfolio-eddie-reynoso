@@ -1,5 +1,6 @@
 .project-Header{
-    background-color: #fff;
+    background-color: var(--bg);
+    transition: background-color .3s ease, color .3s ease;
     min-height: 100px;
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +8,8 @@
 }
 
 .project-Main {
-    background-color: #fff;
+    background-color: var(--bg);
+    transition: background-color .3s ease, color .3s ease;
     min-height: 100vh;
     box-sizing: border-box;
     margin: 0;
@@ -23,7 +25,7 @@
     flex-direction: column;
     margin: auto;
     max-width: 1150px;
-    height: 100vh;
+    min-height: 100vh;
 }
 .project-Header{
     width: 100%;
@@ -31,7 +33,7 @@
 }
 
 .project-Main h1{
-    color: #000000;
+    color: var(--text);
     font-size: clamp(2rem, 6vw, 3.125rem);
     margin: 0;
 }
@@ -39,7 +41,7 @@
 .project-Main .project-Type{
     font-size: clamp(1rem, 3vw, 1.3rem);
     margin: 20px 0 0 0;
-    color: #616161;
+    color: var(--text-muted);
 }
 
 .navContainer{
@@ -52,7 +54,7 @@
 .project-Details{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: auto auto;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     column-gap: 2rem;
@@ -84,7 +86,7 @@
   h2 {
     font-size: clamp(1.5rem, 2.5vw, 1.875rem);
     margin-bottom: 10px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--text);
     padding-top: 1rem;
   }
 
@@ -96,7 +98,7 @@
 
 
 .div3 { 
-    grid-area: 2 / 1 / 5 / 3; 
+    grid-area: 2 / 1 / 3 / 3; 
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(75px,1fr));
     grid-auto-rows: 100px;
@@ -155,17 +157,17 @@
     gap: 0.3rem;
     align-items: center;
     animation: button-translate-off .15s linear;
-    box-shadow: 0px 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px 0px var(--btn-shadow);
 
     border-radius: 10px;
-    border: 2px solid #000;
+    border: 2px solid var(--text);
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     vertical-align: middle;
     justify-content: center;
     position: relative;
-    color: black;
-    background-color: white;
+    color: var(--text);
+    background-color: var(--btn-bg);
     text-decoration: none;
     width: clamp(10rem, 20vw, 11.75rem);
     height: clamp(3rem, 6vw, 3.6875rem);
@@ -177,7 +179,7 @@
 }
 
 .projectLinks-Container a:hover {
-    box-shadow: 5px 5px 0px 0px #000;
+    box-shadow: 5px 5px 0px 0px var(--btn-shadow);
     animation: button-translate-on .15s forwards;
 }
 
@@ -208,6 +210,24 @@
 
 .displayNone {
     display: none;
+}
+
+.projectLinks-Container a img {
+    filter: var(--icon-filter);
+}
+
+.otherProject-buttons a {
+    color: var(--text);
+}
+
+.project-Main {
+    color: var(--text);
+}
+
+.title-Actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .project-Title {

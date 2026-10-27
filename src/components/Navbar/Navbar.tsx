@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 
 import { useLanguage } from '../../contexts/LanguageContext';
 import { LanguageButton } from './LanguageButton';
+import { ThemeButton } from './ThemeButton';
 
 const linksKeys = [
     {
@@ -43,6 +44,7 @@ export const NavBar = () => {
                 animate="show"
             >
                 <LanguageButton />
+                <ThemeButton />
             </motion.p>
         </nav>
     );

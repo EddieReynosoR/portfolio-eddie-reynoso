@@ -8,10 +8,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { SectionsProvider } from './contexts/sections.js';
 import { Details } from './pages/Details/Details.jsx';
 import { LanguageProvider } from './contexts/LanguageContext.tsx';
+import { ThemeProvider } from './contexts/ThemeContext.tsx';
 
 let rootElement = document.getElementById('root') as Container;
 
 ReactDOM.createRoot(rootElement).render(
+  <ThemeProvider>
   <LanguageProvider>
     <SectionsProvider>
       <Router>
@@ -22,4 +24,5 @@ ReactDOM.createRoot(rootElement).render(
       </Router>
     </SectionsProvider>    
   </LanguageProvider>
+  </ThemeProvider>
 )

@@ -9,7 +9,7 @@
     margin-top: 0.25rem; 
     margin-bottom: 0.5rem;  
     text-transform: uppercase;
-    color: #000;
+    color: var(--text);
     font-size: clamp(1.2rem, 3vw, 1.5rem);
     line-height: 1.6rem;
     width: 120px;
@@ -24,7 +24,7 @@
     display: flex; 
     flex-direction: column; 
     gap: 0.25rem; 
-    color: #000;
+    color: var(--text);
     font-family: 'DM Sans', sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -39,7 +39,7 @@
     line-height: 1.75rem; 
     line-height: 1.25; 
 
-    color: #000;
+    color: var(--text);
 
     font-family: Arial;
     font-size: clamp(1.25rem, 3vw, 1.5rem);
@@ -54,7 +54,7 @@
 }
 
 .article-Subtitle{
-    color: #707070;
+    color: var(--text-muted);
     font-family: 'DM Sans', sans-serif;
     font-size: clamp(1rem, 2.5vw, 1.25rem);
     font-style: normal;
@@ -63,7 +63,7 @@
 }
 
 .article-p{
-    color: #000;
+    color: var(--text);
     font-family: 'DM Sans', sans-serif;
     font-size: clamp(0.875rem, 2vw, 1.125rem);
     font-style: normal;
@@ -94,11 +94,11 @@
     font-weight: 500; 
     line-height: 1.25rem; 
     border-radius: 20px;
-    background: #D9D9D9;
+    background: var(--chip-bg);
 }
 
 .article-ListItem span{
-    color: #000;
+    color: var(--text);
     font-family: 'DM Sans', sans-serif;
     font-size: 0.75rem;
     font-style: normal;
@@ -110,6 +110,7 @@
     margin-left: 0.25rem; 
     width: 1rem; 
     height: 1rem; 
+    filter: var(--icon-filter);
 }
 
 @media (min-width: 1281px) { 

@@ -40,7 +40,7 @@
 .divider-Container {
     max-height: 200px;
     height: 100%;
-    background: linear-gradient(to right bottom, #ffffff00 50%, #ffffff 50%);
+    background: linear-gradient(to right bottom, transparent 50%, var(--bg) 50%);
     position:sticky;
     top: 0;
     width: 100%;

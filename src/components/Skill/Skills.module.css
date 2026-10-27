@@ -16,6 +16,7 @@
 .techLogo{
     height: clamp(4rem, 8vw, 5rem);
     width: clamp(4rem, 8vw, 5rem);
+    filter: var(--icon-filter);
 }
 
 @media screen and (max-width: 1200px){
