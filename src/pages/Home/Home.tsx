@@ -5,7 +5,7 @@ import './Home.css';
 import { useLanguage } from '../../contexts/LanguageContext';
 
 export const Home = () => {
-    const { language, translation } = useLanguage();
+    const { translation } = useLanguage();
 
     return (
         <section className='homeContainer'>
@@ -27,9 +27,7 @@ export const Home = () => {
                                 <button
                                 className='resumeButton'
                                 onClick={() => {
-                                    const pdf = language === "es"
-                                        ? "/docs/CV Reynoso Eduardo ES.pdf"
-                                        : "/docs/CV Reynoso Eduardo EN.pdf";
+                                    const pdf = "/docs/CV Reynoso Eduardo.pdf";
                                     const link = document.createElement('a');
                                     link.href = pdf;
                                     link.download = pdf.split('/').pop() || '';

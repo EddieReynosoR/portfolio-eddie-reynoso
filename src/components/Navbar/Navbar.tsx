@@ -38,7 +38,7 @@ export const NavBar = () => {
             ))}
 
             <motion.p
-                className={styles.navBarP}
+                className={`${styles.navBarP} ${styles.navBarActions}`}
                 variants={slideIn(0.8 + linksKeys.length / 10)}
                 initial="hidden"
                 animate="show"
